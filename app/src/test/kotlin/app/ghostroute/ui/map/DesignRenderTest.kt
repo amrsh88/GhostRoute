@@ -72,7 +72,7 @@ class DesignRenderTest {
         shadowOf(Looper.getMainLooper()).idleFor(Duration.ofMillis(100))
         val bitmap = Bitmap.createBitmap(360,780,Bitmap.Config.ARGB_8888)
         view.draw(Canvas(bitmap))
-        val output = File("/agent/workspace/gps-review/design-preview/destination-dock.png")
+        val output = File("build/design-preview/destination-dock.png")
         output.parentFile?.mkdirs()
         output.outputStream().use { bitmap.compress(Bitmap.CompressFormat.PNG,100,it) }
         val colors = HashSet<Int>()
@@ -123,7 +123,7 @@ class DesignRenderTest {
         assertTrue("dock must remain inside viewport", bottom.bottom <= 568f)
         val bitmap=Bitmap.createBitmap(320,568,Bitmap.Config.ARGB_8888)
         view.draw(Canvas(bitmap))
-        val output=File("/agent/workspace/gps-review/design-preview/narrow-rtl.png")
+        val output=File("build/design-preview/narrow-rtl.png")
         output.parentFile?.mkdirs()
         output.outputStream().use { bitmap.compress(Bitmap.CompressFormat.PNG,100,it) }
         controller.pause().stop().destroy()
@@ -148,7 +148,7 @@ class DesignRenderTest {
         view.layout(0,0,360,780)
         val bitmap=Bitmap.createBitmap(360,780,Bitmap.Config.ARGB_8888)
         view.draw(Canvas(bitmap))
-        val output=File("/agent/workspace/gps-review/design-preview/toolkit.png")
+        val output=File("build/design-preview/toolkit.png")
         output.parentFile?.mkdirs()
         output.outputStream().use { bitmap.compress(Bitmap.CompressFormat.PNG,100,it) }
         controller.pause().stop().destroy()
@@ -187,7 +187,7 @@ class DesignRenderTest {
         shadowOf(Looper.getMainLooper()).idleFor(Duration.ofMillis(100))
         val bitmap = Bitmap.createBitmap(360, 780, Bitmap.Config.ARGB_8888)
         view.draw(Canvas(bitmap))
-        val output = File("/agent/workspace/gps-review/design-preview/dock-paused.png")
+        val output = File("build/design-preview/dock-paused.png")
         output.parentFile?.mkdirs()
         output.outputStream().use { bitmap.compress(Bitmap.CompressFormat.PNG, 100, it) }
         controller.pause().stop().destroy()

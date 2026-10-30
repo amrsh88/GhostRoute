@@ -68,7 +68,7 @@ class RoadsProfilesLiveIpRenderTest {
         shadowOf(Looper.getMainLooper()).idleFor(Duration.ofMillis(100))
         val bitmap = Bitmap.createBitmap(360, heightPx, Bitmap.Config.ARGB_8888)
         view.draw(Canvas(bitmap))
-        val out = File("/agent/workspace/gps-review/design-preview/$name.png")
+        val out = File("build/design-preview/$name.png")
         out.parentFile?.mkdirs()
         out.outputStream().use { bitmap.compress(Bitmap.CompressFormat.PNG, 100, it) }
         controller.pause().stop().destroy()
