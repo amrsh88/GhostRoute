@@ -66,14 +66,6 @@ That's it — you land on the map. Long-press a point or use **Set center here**
 
 > ⚠️ **Detection honesty:** GhostRoute is the device's registered *mock location app*, so apps that check `Location.isMock()` (and tools like Play Integrity) can tell the position is simulated. GhostRoute does not hide this and no bypass is planned.
 
-## Screenshots
-
-| Main map | Destination dock | Live with IP |
-|---|---|---|
-| ![Main map screen](docs/screenshots/app-main.jpg) | ![Destination dock](docs/design-previews/destination-dock.png) | ![Live with IP chip](docs/design-previews/live-ip-chip.png) |
-
-More component previews live in [`docs/design-previews/`](docs/design-previews) — these are real Compose fixtures rendered with sample data.
-
 ## Build from source
 
 Requires **JDK 21** and the **Android SDK (platform 36)**.
