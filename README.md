@@ -22,6 +22,10 @@ Pick any point — on the map, via `geo:` links, or by IP/VPN exit — and a for
 
 ---
 
+## Demo
+
+https://github.com/user-attachments/assets/4ea3949a-ba6d-436c-b573-b474c754c3bf
+
 ## Why GhostRoute
 
 Most mock-location tools are ad-laden, closed-source, or ask for a bajillion permissions. GhostRoute is the opposite:
