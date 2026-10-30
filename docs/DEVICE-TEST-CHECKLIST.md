@@ -10,7 +10,7 @@ Setup: install the APK, finish the setup wizard, and in Developer options choose
 2. **Pause and Resume.** Start a route (step 3), press **Pause** next to Stop. *Expect:* the chip turns amber "paused", the location stops. **Resume** continues from the same spot.
 3. **Stop** from the panel, the notification and the tile each end the run.
 
-## 2. Route from a standing start (fixed in 0.5.2)
+## 2. Route from a standing start
 
 1. With nothing running, open **More tools → Route Studio**, add three waypoints a few hundred metres apart, set the speed to Walk, press **Run route**.
 
