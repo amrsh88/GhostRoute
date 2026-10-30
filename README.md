@@ -2,6 +2,10 @@
 
 Privacy-first mock-location app for Android: pick any point — on the map, via `geo:` links, or by IP/VPN exit — and a foreground service feeds realistic synthetic GPS to the system through Android's test-provider API. No root, no Xposed; it registers as the device's *mock location app*, so other apps may detect the Android mock flag. No anti-detection is promised. Maps, search, opt-in IP lookups and opt-in road routing contact their disclosed providers.
 
+## Screenshots
+
+![GhostRoute main map screen, v0.5.3](docs/screenshots/app-0.5.3-main.jpg)
+
 ## Version 0.5.3 — Live with IP follows the VPN only, offline chip, visible start errors
 
 - **Live with IP follows the VPN exit, never your real address.** Once a lookup of the session has ridden a VPN, losing the VPN holds the last location (the chip says "waiting for VPN") until a VPN carries the lookups again. Turning Live with IP off and on again follows whatever connection you have then. With no VPN involved it still follows network changes. Turning it on while GhostRoute bypasses the VPN (split tunnelling) no longer adopts your real location.
