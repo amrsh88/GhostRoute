@@ -1,4 +1,4 @@
-# On-device test checklist (0.5.3)
+# On-device test checklist
 
 Everything in this release was checked with unit tests, lint and a build. None of it has run on a phone, so this list is the part only you can do. Each step says what to do, what you should see, and what a failure points to. If something fails, note the step number, your Android version and phone model, and what the screen showed.
 
@@ -13,7 +13,6 @@ Setup: install the APK, finish the setup wizard, and in Developer options choose
 ## 2. Route from a standing start (fixed in 0.5.2)
 
 1. With nothing running, open **More tools → Route Studio**, add three waypoints a few hundred metres apart, set the speed to Walk, press **Run route**.
-2. *Expect:* the dot starts at waypoint 1 and **moves** toward waypoint 2 and 3. *Failure:* it stays at waypoint 1 → the route extras are being ignored again (the 0.5.0 and 0.5.1 bug).
 
 ## 3. Follow roads
 

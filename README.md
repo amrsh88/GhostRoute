@@ -66,7 +66,7 @@ That's it — you land on the map. Long-press a point or use **Set center here**
 
 | Main map | Destination dock | Live with IP |
 |---|---|---|
-| ![Main map screen](docs/screenshots/app-0.5.3-main.jpg) | ![Destination dock](docs/design-previews/destination-dock.png) | ![Live with IP chip](docs/design-previews/live-ip-chip.png) |
+| ![Main map screen](docs/screenshots/app-main.jpg) | ![Destination dock](docs/design-previews/destination-dock.png) | ![Live with IP chip](docs/design-previews/live-ip-chip.png) |
 
 More component previews live in [`docs/design-previews/`](docs/design-previews) — these are real Compose fixtures rendered with sample data.
 
