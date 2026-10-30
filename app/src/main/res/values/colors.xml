@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--
+      Single-source rule (Task 1 rider #5): XML colors are ONLY the pre-Compose
+      venues below. The UI palette lives in ui/theme/Color.kt (Compose); do NOT
+      re-declare it here. Launcher vector colors are self-contained in the drawable.
+    -->
+    <color name="window_background">#0A1020</color>
+    <color name="ic_launcher_background">#d1d1d1</color>
+</resources>

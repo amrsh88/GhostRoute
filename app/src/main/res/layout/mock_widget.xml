@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Task 10 home-screen widget: status + toggle. Plain View hierarchy only
+     (RemoteViews surface — no Compose). Dark slate background matches the
+     launcher window color; text colors inline (XML-only venue, no res rule
+     from Task 1 rider #5 applies to layout color *faces*, not palette sources). -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_body"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="12dp"
+    android:background="@color/window_background">
+
+    <TextView
+        android:id="@+id/widget_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="@string/widget_status_off"
+        android:textColor="#2DD4BF"
+        android:textSize="14sp"
+        android:singleLine="true"
+        android:ellipsize="end" />
+
+    <Button
+        android:id="@+id/widget_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/widget_action_start"
+        android:textSize="12sp"
+        android:minWidth="72dp" />
+</LinearLayout>

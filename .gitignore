@@ -1,0 +1,16 @@
+.gradle/
+build/
+*/build/
+local.properties
+# Keep local release-signing credentials and private keystores out of source control.
+keystore.properties
+keystore/*.pks
+.idea/
+*.iml
+.superpowers/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# Kotlin incremental-compile crash logs
+.kotlin/

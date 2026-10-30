@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- Read-only network info: VPN status line and Live with IP network-change detection. Normal permission, no prompt. -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- P4b: floating joystick pad — drawn from the FGS while a run is
+         active, only after the user opts in AND grants "display over other
+         apps" (pre-permission explainer in the settings sheet; the pad never
+         appears without both). -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <!-- Android 11+ package visibility: About-page links (ACTION_VIEW to a browser) must be resolvable. -->
+    <queries>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="https" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="http" />
+        </intent>
+    </queries>
+
+    <application
+        android:name=".GhostRouteApp"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:theme="@style/Theme.GhostRoute"
+        android:supportsRtl="true"
+        android:allowBackup="false">
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!-- F-46: incoming geo: URIs (map links, other apps) land here. -->
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="geo" />
+            </intent-filter>
+            <!-- F-46: share-intake — text shared to GhostRoute with coordinates. -->
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <data android:mimeType="text/plain" />
+            </intent-filter>
+            <!-- P4c: launcher long-press shortcuts (Stop / last location). -->
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/shortcuts" />
+        </activity>
+
+        <!-- P0 (user, 2026-10-27): first-page setup guide (assets/guide.html
+             rendered in-app; no network). Not exported — only the app opens it. -->
+        <activity
+            android:name=".ui.guide.GuideActivity"
+            android:exported="false" />
+
+        <service
+            android:name=".location.MockService"
+            android:exported="true"
+            android:foregroundServiceType="specialUse">
+            <property
+                android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
+                android:value="mock location simulation" />
+            <intent-filter>
+                <action android:name="app.ghostroute.START" />
+                <action android:name="app.ghostroute.STOP" />
+                <action android:name="app.ghostroute.UPDATE" />
+                <action android:name="app.ghostroute.SET_ROUTE" />
+                <action android:name="app.ghostroute.PING" />
+            </intent-filter>
+        </service>
+
+        <!-- Quick-settings tile (Task 10): system-bound toggle; NO new
+             uses-permission — BIND_QUICK_SETTINGS_TILE is the *caller's*
+             permission, declared here to restrict who may bind. -->
+        <service
+            android:name=".tile.MockTileService"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:icon="@drawable/ic_shortcut_place"
+            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE" />
+            </intent-filter>
+        </service>
+
+        <!-- Home-screen widget (Task 10): non-exported receiver — updates come
+             from the system AppWidget host and our in-process refresh broadcast. -->
+        <receiver
+            android:name=".widget.MockWidgetProvider"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/mock_widget_info" />
+        </receiver>
+    </application>
+</manifest>

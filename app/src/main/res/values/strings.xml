@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">GhostRoute</string>
+    <string name="notif_mock_title">GhostRoute mock location active</string>
+    <string name="notif_mock_text">Simulating GPS location. Tap to open.</string>
+    <string name="notif_mock_stop">Stop</string>
+
+    <!-- Task 6: map screen -->
+    <string name="chip_state_idle">idle</string>
+    <string name="chip_state_preparing">preparing</string>
+    <string name="chip_state_paused">paused</string>
+    <string name="notif_mock_text_paused">Paused at the current spot. Tap to open.</string>
+    <string name="notif_mock_pause">Pause</string>
+    <string name="notif_mock_resume">Resume</string>
+    <string name="run_pause">Pause</string>
+    <string name="run_resume">Resume</string>
+    <string name="chip_state_running">running</string>
+    <string name="chip_online">online</string>
+    <string name="chip_offline">offline</string>
+    <string name="fab_go">Go</string>
+    <string name="fab_stop">Stop</string>
+    <string name="fab_choose_location">Set destination</string>
+    <string name="card_pin_title">Selected destination</string>
+    <string name="card_pin_hint">Pan and zoom only preview; long-press or Set destination to choose.</string>
+    <string name="card_pin_save">Save</string>
+    <string name="card_pin_copy">Copy</string>
+    <string name="card_pin_share">Share</string>
+    <string name="card_pin_range">From simulated position: %1$s · %2$s</string>
+    <string name="map_no_destination">No destination set</string>
+    <string name="map_center_preview">Map center preview: %1$s</string>
+    <string name="map_set_destination">Set center here</string>
+    <string name="route_place_waypoint_here">Place waypoint here</string>
+    <string name="range_m">%1$d m</string>
+    <string name="range_km">%1$.1f km</string>
+    <string name="compass_n">N</string>
+    <string name="compass_ne">NE</string>
+    <string name="compass_e">E</string>
+    <string name="compass_se">SE</string>
+    <string name="compass_s">S</string>
+    <string name="compass_sw">SW</string>
+    <string name="compass_w">W</string>
+    <string name="compass_nw">NW</string>
+    <string name="share_location_title">Share destination</string>
+    <string name="error_share_unavailable">No app can receive this location</string>
+
+    <!-- Task 7: search + coordinate entry -->
+    <string name="fab_search">Search</string>
+    <string name="search_hint">Search city or place…</string>
+    <string name="search_empty">No results</string>
+    <string name="search_error">Search failed</string>
+    <string name="search_coord_hint">Paste or type coordinates</string>
+    <string name="search_coord_apply">Set pin</string>
+    <string name="search_coord_invalid">Not valid coordinates</string>
+    <!-- P2-4: search history + coordinate copy -->
+    <string name="search_history_title">Recent searches</string>
+    <string name="search_copied">Coordinates copied</string>
+
+    <!-- Task 8: spots, recents, folders -->
+    <string name="spots_title">Spots</string>
+    <!-- P3a: accessible name for the glyph-only Spots pill (TalkBack). -->
+    <string name="pill_spots">Spots</string>
+    <string name="spots_done">Done</string>
+    <string name="spot_save_title">Save selected location</string>
+    <string name="spot_name_hint">Name this spot</string>
+    <string name="spot_saved">Spot saved</string>
+    <string name="csv_import_button">Import CSV</string>
+    <string name="csv_export_button">Export CSV</string>
+    <string name="csv_import_preview_title">Review Spots to import</string>
+    <plurals name="csv_import_preview_count">
+        <item quantity="one">1 Spot will be imported without a folder. Nothing changes until you confirm.</item>
+        <item quantity="other">%1$d Spots will be imported without a folder. Nothing changes until you confirm.</item>
+    </plurals>
+    <string name="csv_import_apply">Import Spots</string>
+    <plurals name="csv_imported_count">
+        <item quantity="one">Imported 1 Spot</item>
+        <item quantity="other">Imported %1$d Spots</item>
+    </plurals>
+    <string name="csv_export_success">Spots CSV exported</string>
+    <string name="csv_io_error">Could not read or write that CSV file</string>
+    <string name="error_csv_invalid">This CSV is invalid or contains an unsupported row</string>
+    <string name="spots_empty">No spots here yet</string>
+    <string name="spots_recents">Recents</string>
+    <string name="spots_recents_ago">%1$dm ago</string>
+    <string name="spots_recents_clear">Clear</string>
+    <string name="spots_recents_clear_manual">Clear map pins</string>
+    <string name="spots_recents_clear_manual_title">Remove old map-pin recents?</string>
+    <plurals name="spots_recents_clear_manual_text">
+        <item quantity="one">Remove 1 recent entry labeled “manual pin” only? Saved Spots and other recents are kept.</item>
+        <item quantity="other">Remove %1$d recent entries labeled “manual pin” only? Saved Spots and other recents are kept.</item>
+    </plurals>
+    <string name="spots_recents_clear_title">Clear recents?</string>
+    <string name="spots_recents_clear_text">This removes the jump list. Saved spots are kept.</string>
+    <string name="spots_recents_clear_yes">Clear</string>
+    <string name="spots_recents_empty">No recent jumps yet — drop a pin or pick a place</string>
+    <string name="session_start_recent">session start</string>
+    <string name="menu_edit_location">Edit location</string>
+    <string name="folder_rename_title">Rename folder</string>
+    <string name="folder_delete">Delete folder</string>
+    <string name="folder_delete_title">Delete folder?</string>
+    <string name="folder_delete_text">Delete “%1$s”? Its spots are kept and become unfiled.</string>
+    <string name="error_duplicate_name">That name is already in use</string>
+    <string name="error_coords_invalid">Enter valid coordinates (lat −85…85, lng −180…180)</string>
+    <string name="dialog_latitude">Latitude</string>
+    <string name="dialog_longitude">Longitude</string>
+    <string name="dialog_coords_invalid">Enter valid coordinates (lat −85…85, lng −180…180)</string>
+    <string name="spots_default_folder">Default</string>
+    <string name="menu_rename">Rename</string>
+    <string name="menu_move">Move to folder…</string>
+    <string name="menu_delete">Delete</string>
+    <string name="dialog_rename_title">Rename spot</string>
+    <string name="rename_hint">Name</string>
+    <string name="delete_confirm_title">Delete spot</string>
+    <string name="delete_confirm_text">Delete “%1$s”? This cannot be undone.</string>
+    <string name="dialog_delete">Delete</string>
+    <string name="dialog_save">Save</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="move_title">Move to folder</string>
+    <string name="move_unfiled">No folder</string>
+    <string name="folder_new">New folder</string>
+    <string name="folder_name_hint">Folder name</string>
+
+    <!-- Task 9: setup wizard -->
+    <string name="wizard_title">Setup</string>
+    <string name="wizard_step_dev_title">Turn on Developer options</string>
+    <string name="wizard_step_dev_body">GhostRoute feeds fake locations through Android’s mock-location system. That system only exists once Developer options are enabled — a one-time toggle. Tap “Open settings”, then switch Developer options on.</string>
+    <string name="wizard_step_mock_title">Pick the mock location app</string>
+    <string name="wizard_step_mock_body">Inside Developer options, find “Select mock location app” and choose GhostRoute. This grants the one permission Android never offers a dialog for. Tap “Open settings” to go there.</string>
+    <string name="wizard_picker_guide_title">Where to tap</string>
+    <string name="wizard_picker_guide_body">Open settings → Developer options → “Select mock location app” → GhostRoute. Come back here — the checkmark updates on return.</string>
+    <!-- P0: first-page setup guide (bundled HTML, EN + فارسی, opens in-app). -->
+    <string name="about_guide_title">GhostRoute — Setup Guide</string>
+    <string name="about_guide_open">Step-by-step setup guide (developer mode &amp; basics)</string>
+    <string name="wizard_step_notif_title">Allow notifications</string>
+    <string name="wizard_step_notif_body">Android requires a visible notification while a simulated location is running. Keeping it allowed also lets you stop the simulation straight from the shade.</string>
+    <string name="wizard_step_done_title">All set</string>
+    <string name="wizard_step_done_body">Setup is complete. You can drop a pin on the map and press Go to simulate. Revisit Setup any time if a check turns red.</string>
+    <string name="wizard_open_settings">Open settings</string>
+    <string name="wizard_all_set">Start</string>
+    <string name="wizard_status_dev">Developer options</string>
+    <string name="wizard_status_mock">Mock location app</string>
+    <string name="wizard_status_notif">Notifications</string>
+    <string name="wizard_status_overlay">Overlay permission</string>
+    <string name="wizard_status_overlay_optional">optional — only needed for the floating joystick</string>
+    <string name="wizard_status_ok">granted</string>
+    <string name="wizard_status_pending">pending</string>
+
+    <!-- Task 10: widget -->
+    <string name="widget_status_off">off</string>
+    <string name="widget_status_on">running</string>
+    <string name="widget_action_start">Start</string>
+    <string name="widget_action_stop">Stop</string>
+
+    <!-- Task 10: values relocated out of Compose ( SpotCard meta, coordinate
+         faces, injected-count chip). Patterns are locale-neutral numbers; fa
+         mirrors the same formats. -->
+    <string name="format_coords_3">%1$.3f, %2$.3f</string>
+    <string name="format_coords_4">%1$.4f, %2$.4f</string>
+    <string name="chip_injected_count">+%1$d</string>
+    <!-- Task 10.5: IP/VPN location sync chip (one tap toggles; states inform). -->
+    <string name="chip_ip_sync_on">live with IP · on</string>
+    <string name="chip_ip_sync_off">live with IP · off</string>
+    <string name="chip_ip_sync_manual">live with IP · off (you picked a place)</string>
+    <string name="chip_ip_sync_stale">live with IP · stale</string>
+
+    <!-- P1-1c: IP/VPN section under the chips (detection, staleness, leak,
+         refresh interval). en/fa parity machine-checked. -->
+    <string name="ip_details_title">public IP · VPN exit</string>
+    <string name="ip_details_none">no IP data yet</string>
+    <string name="ip_provider">provider · %1$s</string>
+    <string name="ip_last_update_ago">last update %1$d min ago</string>
+    <string name="ip_last_update_just_now">last update just now</string>
+    <string name="ip_stale_prefix">stale: %1$s</string>
+    <string name="ip_leak_warning">IPv6 leak: IPv4 and IPv6 traffic exits from different locations</string>
+    <string name="ip_info_action">about Live with IP</string>
+    <string name="ip_info_dialog_title">Live with IP &amp; VPN detection</string>
+    <string name="ip_info_leak_body">The warning means your IPv4 and IPv6 requests leave the network from different places — typically IPv6 traffic not covered by the VPN tunnel. It does not move the simulated location; it only flags a routing mismatch.</string>
+    <string name="ip_info_split_tunnel_body">Many VPN apps tunnel selected apps only. If GhostRoute is excluded, its lookups use your real connection instead of the VPN. To fix this, add GhostRoute to your VPN\'s tunnel list (split-tunneling settings of your VPN app).</string>
+    <string name="ip_info_gps_body">Changing the simulated GPS location never changes the device\'s real public IP address — the two are independent.</string>
+    <string name="ip_refresh_interval_label">IP refresh interval</string>
+    <string name="ip_refresh_manual">manual</string>
+    <string name="ip_refresh_60">60 s</string>
+    <string name="ip_refresh_2m">2 min</string>
+    <string name="ip_refresh_5m">5 min</string>
+
+    <!-- P1 rework: manual refresh + explicit adopt action + local/public
+         distinction + honest tunnel status. en/fa parity machine-checked. -->
+    <string name="ip_refresh_now">refresh now</string>
+    <string name="ip_use_location">use IP location</string>
+    <string name="ip_public_line">public · %1$s</string>
+    <string name="ip_local_line">device local · %1$s</string>
+    <string name="ip_tunnel_through">lookups ride the VPN tunnel</string>
+    <string name="ip_tunnel_bypassed">this app bypasses the VPN tunnel (split tunneling) — the location shown is NOT the VPN exit</string>
+    <string name="ip_tunnel_none">no VPN tunnel detected</string>
+    <!-- P6a: IP history (timeline, retention, clear, CSV share) -->
+    <string name="ip_hist_title">IP history</string>
+    <string name="ip_hist_empty">no IP history yet</string>
+    <string name="ip_hist_recording_off">recording is off — no history is kept (only the latest lookup is cached so the app can resume after a restart)</string>
+    <string name="ip_hist_row_ago">%1$d min ago</string>
+    <string name="ip_hist_row_time_unknown">time unknown</string>
+    <string name="ip_hist_share">share as CSV</string>
+    <string name="ip_hist_clear">clear</string>
+    <string name="ip_hist_clear_title">Clear IP history?</string>
+    <string name="ip_hist_clear_text">Every recorded IP observation will be deleted from this device.</string>
+    <string name="ip_hist_clear_confirm">Clear</string>
+    <string name="ip_hist_retention_label">keep</string>
+    <string name="ip_hist_retention_off">off (nothing recorded)</string>
+
+    <!-- P1-3a: settings sheet (pill entry on the map, house sheet style). -->
+    <string name="pill_settings">Settings</string>
+    <string name="pill_more">More</string>
+    <string name="tools_title">More tools</string>
+    <string name="tools_done">Done</string>
+    <string name="settings_title">Settings</string>
+    <string name="settings_map_style">Map style</string>
+    <string name="settings_map_style_dark">Dark</string>
+    <string name="settings_map_style_liberty">Liberty</string>
+    <string name="settings_map_style_light">Light</string>
+    <!-- P4b: floating joystick -->
+    <string name="settings_joystick">Floating joystick</string>
+    <string name="settings_joystick_desc">A small draggable pad over other apps to nudge the simulated spot while a run is active.</string>
+    <string name="settings_joystick_hint">Shown only while a simulation is running; unavailable during route runs, which the pad does not steer.</string>
+    <string name="joystick_explainer_title">Display over other apps</string>
+    <string name="joystick_explainer_body">The floating joystick draws a small pad over other apps so you can nudge the simulated location without switching back to GhostRoute. Android requires the “Display over other apps” permission for this — GhostRoute uses it only for the pad, only while a simulation runs.</string>
+    <string name="joystick_explainer_open">Open settings</string>
+    <string name="joystick_explainer_later">Later</string>
+    <string name="joystick_pad_cd">Joystick pad</string>
+    <string name="joystick_up">Nudge north</string>
+    <string name="joystick_left">Nudge west</string>
+    <string name="joystick_right">Nudge east</string>
+    <string name="joystick_down">Nudge south</string>
+    <string name="joystick_stop">Stop simulation</string>
+    <string name="joystick_minimize">Minimize joystick</string>
+    <string name="joystick_expand">Expand joystick</string>
+    <string name="joystick_speed_cd">Nudge distance — tap to change</string>
+    <string name="joystick_speed_value">%1$d m</string>
+    <string name="settings_about">About</string>
+    <string name="settings_diagnostics">Diagnostics</string>
+
+    <!-- P2-5b: backup & restore (SAF export/import; versioned JSON
+         — spots, folders, routes, reserved profiles, settings only;
+         sessions/history/device state are deliberately NOT in backups). -->
+    <string name="settings_backup">Backup</string>
+    <string name="backup_export">Export backup</string>
+    <!-- P3c: in-flight state while a backup export/import runs. -->
+    <string name="backup_busy">Working…</string>
+    <string name="backup_import">Import backup</string>
+    <string name="backup_done_export">Backup saved</string>
+    <string name="backup_summary_folders">Folders: %1$d imported, %2$d kept, %3$d skipped</string>
+    <string name="backup_summary_spots">Spots: %1$d imported, %2$d kept, %3$d skipped</string>
+    <string name="backup_summary_routes">Routes: %1$d imported, %2$d kept</string>
+    <string name="backup_summary_settings_changed">Settings updated</string>
+    <string name="backup_summary_settings_unchanged">Settings unchanged</string>
+    <string name="backup_error_newer_version">This backup was made by a newer version of GhostRoute</string>
+    <string name="backup_error_invalid">Not a valid GhostRoute backup file</string>
+    <string name="backup_error_read">Couldn\'t read the selected file</string>
+    <string name="backup_error_write">Couldn\'t write the backup file</string>
+
+    <!-- P1-3b: about sheet — version is real BuildConfig identity; licenses are
+         verified from dependency POMs; providers match what the code calls. -->
+    <string name="about_version">Version %1$s · build %2$d</string>
+    <string name="about_credits_title">Credits</string>
+    <string name="about_credit_role_map">map</string>
+    <string name="about_credit_role_tiles">map tiles</string>
+    <string name="about_credit_role_search">place search</string>
+    <string name="about_credit_role_ip">IP lookup</string>
+    <string name="about_credit_role_core">core</string>
+    <string name="about_privacy_title">Privacy</string>
+    <string name="about_privacy_network">The only network requests GhostRoute makes: %1$s.</string>
+    <string name="about_privacy_no_telemetry">No analytics, no tracking, no telemetry — nothing else leaves your device.</string>
+    <string name="about_links_failed">Couldn\u2019t open the link — install a browser or Telegram first.</string>
+
+    <!-- P1-3c: diagnostics sheet — real state only, fault→recovery guidance,
+         share button exporting exactly the on-screen rows. -->
+    <string name="diag_service">Simulator</string>
+    <string name="diag_injected">Samples injected</string>
+    <string name="diag_count_value">%1$d</string>
+    <string name="diag_last_sample">Last sample</string>
+    <string name="diag_last_lookup">Last IP lookup</string>
+    <string name="diag_ago_minutes">%1$d min ago</string>
+    <string name="diag_ip_sync">Live with IP</string>
+    <string name="diag_sec_value">%1$d s</string>
+    <string name="diag_share">Share report</string>
+    <string name="diag_all_ok">Everything checks out — the mock slot is granted.</string>
+    <string name="diag_fix_deselected">A mock-slot run stopped: another app is currently selected as the mock location app. In Developer options, tap “Select mock location app” and choose GhostRoute, then start the simulation again.</string>
+    <string name="diag_fix_cleared">A mock-slot run stopped: the mock-location grant was revoked. Open Developer options → “Select mock location app” and re-select GhostRoute.</string>
+    <string name="diag_fix_dev_mode">The mock slot is not granted and Developer options are off. Turn Developer options on, then choose GhostRoute under “Select mock location app”.</string>
+    <string name="diag_fix_generic">The mock slot is not granted. Open Developer options → “Select mock location app” and pick GhostRoute, then start the simulation again.</string>
+    <!-- P2-1b: timeline sheet (F-50) — recorded sessions, rename/delete (the
+         delete dialog documents the position CASCADE), clear-all confirm, and
+         the keep-days retention row. -->
+    <string name="pill_timeline">Timeline</string>
+    <string name="timeline_title">Session timeline</string>
+    <string name="timeline_empty">No session recordings yet — start a simulation to build one.</string>
+    <string name="timeline_session_untitled">Untitled session</string>
+    <string name="timeline_positions_count">%1$d positions</string>
+    <string name="timeline_rename_title">Rename session</string>
+    <string name="timeline_delete_title">Delete session?</string>
+    <string name="timeline_delete_text">This also deletes all %1$d recorded positions of this session.</string>
+    <string name="timeline_delete_text_none">This session has no recorded positions; only the session row itself is deleted.</string>
+    <string name="timeline_delete_confirm">Delete</string>
+    <string name="timeline_clear_all">Clear all</string>
+    <string name="timeline_clear_title">Clear all sessions?</string>
+    <string name="timeline_clear_text">Every session and all their recorded positions will be deleted.</string>
+    <string name="timeline_clear_confirm">Clear</string>
+    <string name="timeline_retention_label">Keep sessions</string>
+    <string name="timeline_retention_days">%1$d days</string>
+    <string name="timeline_retention_forever">Forever</string>
+    <string name="timeline_route_on_map">Route shown on the map</string>
+    <!-- P2-2b Route Studio -->
+    <string name="pill_route">Route</string>
+    <string name="route_title">Route studio</string>
+    <string name="route_add_waypoint">Add waypoint</string>
+    <string name="route_remove">Remove</string>
+    <string name="route_move_up">Up</string>
+    <string name="route_move_down">Down</string>
+    <string name="route_move_hint">Waypoint armed: drag the map and release to place it.</string>
+    <string name="route_loop">Loop</string>
+    <string name="route_reversed">Reversed</string>
+    <string name="route_speed">Speed</string>
+    <string name="route_speed_value">%1$.1f m/s</string>
+    <string name="route_estimate">Estimate</string>
+    <string name="route_distance_km">%1$.2f km</string>
+    <string name="route_distance_m">%1$d m</string>
+    <string name="route_duration_hm">%1$dh %2$02dmin</string>
+    <string name="route_duration_ms">%1$dmin %2$02ds</string>
+    <string name="route_duration_s">%1$d s</string>
+    <string name="route_save">Save</string>
+    <string name="route_activate">Run route</string>
+    <string name="route_pause">Pause</string>
+    <string name="route_resume">Resume</string>
+    <string name="route_restart">Restart</string>
+    <string name="route_saved_routes">Saved routes</string>
+    <!-- P5d: section header for the waypoint editor (en/fa parity machine-checked). -->
+    <string name="route_section_waypoints">Waypoints</string>
+    <string name="route_routes_empty">No saved routes yet</string>
+    <string name="route_empty">No waypoints yet — position the map, then tap “Add waypoint”.</string>
+    <string name="route_needs_two">A route needs at least two waypoints.</string>
+    <string name="route_points_count">%1$d waypoints</string>
+    <string name="route_gpx_import">Import GPX</string>
+    <string name="route_gpx_export">Export GPX</string>
+    <string name="route_gpx_error">GPX file could not be imported — the route is unchanged.</string>
+    <string name="route_name_hint">Route name</string>
+    <string name="route_delete_title">Delete this route?</string>
+    <string name="route_delete_text">The saved route “%1$s” and its points are deleted. Your current editor contents are kept.</string>
+    <string name="route_discard_title">Discard unsaved edits?</string>
+    <string name="route_discard_text">Loading or importing a route replaces your unsaved edits.</string>
+    <string name="route_discard_confirm">Discard</string>
+    <string name="route_waypoint_n">%1$d</string>
+    <!-- P2-3: session dashboard — live session metrics; unknown = honest dash -->
+    <string name="pill_dashboard">Dashboard</string>
+    <string name="dashboard_title">Session dashboard</string>
+    <string name="dashboard_idle">No session is running. While idle the live values show “—”; everything goes live the moment a simulation starts.</string>
+    <string name="dashboard_coords">Coordinates</string>
+    <string name="dashboard_speed">Speed</string>
+    <string name="dashboard_speed_value">%1$.1f m/s</string>
+    <string name="dashboard_speed_pending">first sample pending…</string>
+    <string name="dashboard_elapsed">Elapsed</string>
+    <string name="dashboard_elapsed_hms">%1$02d:%2$02d:%3$02d</string>
+    <string name="dashboard_elapsed_ms">%1$02d:%2$02d</string>
+    <string name="dashboard_distance">Distance</string>
+    <string name="dashboard_profile">Profile</string>
+    <string name="dashboard_profile_static">Anchor (static)</string>
+    <string name="dashboard_profile_jitter">Jitter · %1$.0f m radius</string>
+    <string name="dashboard_profile_route">Route · %1$d waypoints · %2$s · %3$.1f m/s</string>
+    <string name="dashboard_route_mode_once">once</string>
+    <string name="dashboard_route_mode_loop">loop</string>
+    <string name="dashboard_route_mode_pingpong">ping-pong</string>
+    <string name="dashboard_ip">Public IP</string>
+    <string name="dashboard_dash">—</string>
+    <!-- P2-6b: location profiles (roadmap line 47) -->
+    <string name="pill_profiles">Profiles</string>
+    <string name="profiles_title">Profiles</string>
+    <string name="profiles_empty">No profiles yet. Choose a place or start a route, then tap “Save current setup”.</string>
+    <string name="profiles_activate">Activate</string>
+    <string name="profiles_duplicate">Duplicate</string>
+    <string name="profiles_blocked_manual_pin">Blocked: a manual pin is active — activation never overrides it.</string>
+    <string name="profiles_blocked_invalid">Blocked: this profile is damaged and can no longer be activated.</string>
+    <string name="profiles_source_label">Location</string>
+    <string name="profiles_source_pin">Current pin</string>
+    <string name="profiles_source_last_run">Last run</string>
+    <string name="profiles_spot_none">No saved spots</string>
+    <string name="profiles_route_none">No saved routes</string>
+    <string name="profiles_mode_label">Route mode</string>
+    <string name="profiles_mode_loop">Loop</string>
+    <string name="profiles_mode_pingpong">Ping-pong</string>
+    <string name="profiles_mode_once">Once</string>
+    <string name="profiles_speed_hint">Speed m/s (blank = engine default)</string>
+    <string name="profiles_numbers_invalid">Check the name, location and numbers.</string>
+    <string name="profiles_delete_title">Delete profile</string>
+    <string name="profiles_delete_text">Delete “%1$s”? This cannot be undone.</string>
+    <string name="profiles_dirty_title">Discard changes?</string>
+    <string name="profiles_dirty_text">Closing now throws away the unsaved edits.</string>
+    <string name="profiles_dirty_confirm">Discard</string>
+    <string name="profiles_dirty_keep">Keep editing</string>
+    <string name="backup_summary_profiles">Profiles: %1$d imported, %2$d kept</string>
+
+    <!-- P4c: automation intake + launcher shortcuts (docs/intents.md) -->
+    <string name="shortcut_stop">Stop</string>
+    <string name="shortcut_stop_long">Stop the simulation</string>
+    <string name="shortcut_last">Last location</string>
+    <string name="shortcut_last_long">Open the last simulated location</string>
+    <string name="error_intake_spot_not_found">Spot not found</string>
+    <string name="error_intake_route_not_found">Route not found</string>
+    <string name="error_intake_malformed">Malformed automation request</string>
+    <string name="error_intake_no_last">No stored last location</string>
+
+    <!-- P4d: dashboard route remaining + map quick access (recents) -->
+    <string name="dashboard_route_remaining">Route remaining</string>
+    <string name="dashboard_route_remaining_value">%1$s of %2$s</string>
+
+    <!-- Verified feature pass -->
+    <string name="route_undo">Undo</string>
+    <string name="route_redo">Redo</string>
+    <string name="route_reverse">Reverse order</string>
+    <string name="route_preset_walk">Walking</string>
+    <string name="route_preset_cycle">Cycling</string>
+    <string name="route_preset_drive">Driving</string>
+    <string name="route_pick_on_map">Move selected waypoint on map</string>
+    <string name="route_gpx_importing">Importing GPX…</string>
+    <string name="route_gpx_imported">GPX imported</string>
+    <string name="route_gpx_exporting">Exporting GPX…</string>
+    <string name="route_gpx_exported">GPX exported</string>
+    <string name="route_gpx_export_error">GPX export failed. The destination may contain an incomplete file.</string>
+    <string name="route_gpx_too_large">GPX files must be 5 MiB or smaller. The route is unchanged.</string>
+    <string name="route_point_limit">Routes support at most 2,000 waypoints. No changes were applied.</string>
+    <string name="route_start_error">Route could not be started. Check setup and try again.</string>
+    <string name="route_send_error">Route command could not be sent. Check engine status.</string>
+    <string name="route_load_error">Saved route could not be loaded. Your current route was kept.</string>
+    <string name="route_loop_hint">Loop repeats the open path and jumps from the last point to the first. The estimate excludes a closing leg.</string>
+    <string name="route_pingpong_hint">Ping-pong travels forward and back. The estimate covers one forward traversal.</string>
+    <string name="profile_start">Start profile</string>
+    <string name="profile_applying">Applying profile…</string>
+    <string name="profile_failed">Could not apply or send the configuration. Check setup and try again.</string>
+    <string name="profile_ready">Profile set up on the map. Press Go to start.</string>
+    <string name="profile_selected">Prepared profile: %1$s</string>
+    <string name="apply_selected">Apply destination now</string>
+    <string name="recenter_live">Show simulated position</string>
+    <string name="timer_title">Auto-stop timer</string>
+    <string name="timer_hint">Choose when the running simulation should stop. The timer does not survive process death.</string>
+    <string name="timer_start_first">Start a simulation before setting a stop timer.</string>
+    <string name="timer_deadline">Stops at %1$s</string>
+    <string name="timer_minutes">After %1$d min</string>
+    <string name="timer_cancel">Cancel timer</string>
+    <string name="backup_error_apply">Restore could not finish. Database changes were rolled back where possible; settings recovery may need review. Keep your backup and check current data before retrying.</string>
+    <string name="route_add_on_map">Add waypoint on map</string>
+
+    <!-- Night navigation design -->
+    <string name="ui_destination_caption">Choose a place. Make your next move.</string>
+    <string name="ui_coordinate_value">%1$.5f</string>
+    <string name="ui_network_title">Network &amp; IP</string>
+    <string name="ui_network_details">Tap for network details</string>
+    <string name="ui_network_warning">Network warning · tap for details</string>
+    <string name="ui_toolkit_caption">Everything for your next route</string>
+    <string name="ui_create_group">Create &amp; explore</string>
+    <string name="ui_session_group">Your session</string>
+    <string name="ui_app_group">App preferences</string>
+    <string name="ui_edit_profile">Edit profile</string>
+
+    <!-- 0.5.0: Follow roads -->
+    <string name="roads_title">Follow roads</string>
+    <string name="roads_hint">Snaps the route to real roads instead of straight lines. Start and Apply use the road route.</string>
+    <string name="roads_profile_foot">Using walking paths (speeds up to 9 km/h)</string>
+    <string name="roads_profile_bike">Using bike routes (speeds up to 25 km/h)</string>
+    <string name="roads_profile_car">Using roads for cars</string>
+    <string name="roads_preview">Show road route</string>
+    <string name="roads_fetching">Finding roads…</string>
+    <string name="roads_ready">Road route ready: %1$s along %2$d points.</string>
+    <string name="roads_simplified">Long route simplified to fit; it stays within %1$d m of the road.</string>
+    <string name="roads_privacy">While this is on, your waypoints are sent to routing.openstreetmap.de (OpenStreetMap data) to find roads. Nothing is sent while it is off.</string>
+    <string name="roads_err_no_road">A waypoint is more than 500 m from any suitable road. Move it closer to a road.</string>
+    <string name="roads_err_no_route">These waypoints are not connected by roads of this type (for example, across water).</string>
+    <string name="roads_err_network">Could not reach the routing service. Check your connection. Nothing was started.</string>
+    <string name="roads_err_server">The routing service is busy or unavailable. Try again later. Nothing was started.</string>
+    <string name="roads_err_too_many">Follow roads supports up to 100 waypoints.</string>
+    <string name="roads_err_few">Add at least two waypoints.</string>
+    <string name="roads_err_bad">The routing service sent an unexpected answer. Nothing was started.</string>
+    <string name="profile_failed_roads">No road route found for this profile. Check the connection, or turn off Follow roads in Route Studio.</string>
+    <string name="about_credit_role_routing">road routing (optional)</string>
+    <string name="ip_info_live_body">Live with IP makes the simulated location follow your IP address. Turn it on and GhostRoute goes to the place your IP points to (for example your VPN\'s exit country) and starts there. When your VPN reconnects or you switch servers, it checks again within a few seconds and moves to the new place. If your VPN drops and does not come back, it keeps the last location instead of following your real IP; turn Live with IP off and on again to follow your direct connection instead. It follows only while a simulation is running. A VPN that changes server without reconnecting is picked up by the periodic check instead. Choosing a place on the map or moving the joystick turns it off.</string>
+
+    <!-- 0.5.0: simpler profiles -->
+    <string name="profiles_save_current">Save current setup</string>
+    <string name="profiles_save_current_hint">Saves the place you selected, or the route that is running, so you can start it again with one tap.</string>
+    <string name="profiles_save_nothing">Nothing to save yet. Choose a place or start a route first.</string>
+    <string name="profiles_save_failed">Could not save the profile. Check that there is a place or route to save.</string>
+    <string name="profiles_save_name_title">Name this profile</string>
+    <string name="profiles_build_custom">Build from a saved place or route</string>
+    <string name="profiles_menu_setup">Set up on the map without starting</string>
+    <string name="profiles_summary_place">Place · %1$s</string>
+    <string name="profiles_summary_route">Route · %1$d points · %2$s · %3$d km/h</string>
+
+    <!-- 0.5.0 audit fixes -->
+    <string name="search_history_clear">Clear</string>
+    <string name="search_history_clear_title">Clear search history?</string>
+    <string name="search_history_clear_text">All recent searches are removed. Saved spots and recents are not affected.</string>
+    <string name="ip_refresh_interval_hint">How often Live with IP re-checks your IP while it is on. “Manual” checks only when you tap refresh. Network changes are always checked right away.</string>
+    <string name="timeline_retention_hint">Older sessions are removed the next time the app starts.</string>
+    <string name="chip_ip_sync_waiting_vpn">live with IP · waiting for VPN</string>
+    <string name="mock_slot_banner_title">Could not start: mock location is not set up</string>
+    <string name="mock_slot_banner_deselected">Another app is selected as the mock location app. In Developer options, tap “Select mock location app”, choose GhostRoute, then press Go again.</string>
+    <string name="mock_slot_banner_cleared">Android revoked GhostRoute\'s mock location access. In Developer options, tap “Select mock location app”, choose GhostRoute again, then press Go.</string>
+    <string name="mock_slot_banner_generic">GhostRoute is not the selected mock location app. In Developer options, tap “Select mock location app”, choose GhostRoute, then press Go again.</string>
+</resources>

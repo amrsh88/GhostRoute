@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- P4c: launcher long-press shortcuts (docs/intents.md). Static shortcuts
+     land on the exported MainActivity with a custom action; handleIntake
+     routes them: STOP -> the real MockService stop path (P4c-E6 — a static
+     shortcut cannot bind a service, and a second stop entry point would fork
+     the lifecycle authority); OPEN_LAST -> camera-only recenter on the last
+     simulated spot (P4c-E9: no pin/recents writes). -->
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="stop"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_stop"
+        android:shortcutShortLabel="@string/shortcut_stop"
+        android:shortcutLongLabel="@string/shortcut_stop_long">
+        <intent
+            android:action="app.ghostroute.intent.STOP"
+            android:targetPackage="app.ghostroute"
+            android:targetClass="app.ghostroute.MainActivity" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="last-location"
+        android:enabled="true"
+        android:icon="@drawable/ic_shortcut_place"
+        android:shortcutShortLabel="@string/shortcut_last"
+        android:shortcutLongLabel="@string/shortcut_last_long">
+        <intent
+            android:action="app.ghostroute.intent.OPEN_LAST"
+            android:targetPackage="app.ghostroute"
+            android:targetClass="app.ghostroute.MainActivity" />
+    </shortcut>
+</shortcuts>

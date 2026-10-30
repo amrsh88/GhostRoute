@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Persian strings (DESIGN §8: "all user-facing strings in strings.xml (en + fa)").
+    Created in Task 7 alongside the first search copy — pre-existing Task 6 keys
+    translated here too so the fa locale is complete, not half-fallback.
+-->
+<resources>
+    <string name="app_name">GhostRoute</string>
+    <string name="notif_mock_title">GhostRoute مکان شبیه‌سازی فعال است</string>
+    <string name="notif_mock_text">شبیه‌سازی موقعیت GPS. برای باز شدن لمس کنید.</string>
+    <string name="notif_mock_stop">توقف</string>
+
+    <!-- Task 6: map screen -->
+    <string name="chip_state_idle">آماده</string>
+    <string name="chip_state_preparing">در حال آماده‌سازی</string>
+    <string name="chip_state_paused">مکث‌شده</string>
+    <string name="notif_mock_text_paused">مکث‌شده در موقعیت فعلی. برای باز شدن لمس کنید.</string>
+    <string name="notif_mock_pause">مکث</string>
+    <string name="notif_mock_resume">ادامه</string>
+    <string name="run_pause">مکث</string>
+    <string name="run_resume">ادامه</string>
+    <string name="chip_state_running">در حال اجرا</string>
+    <string name="chip_online">آنلاین</string>
+    <string name="chip_offline">آفلاین</string>
+    <string name="fab_go">برو</string>
+    <string name="fab_stop">توقف</string>
+    <string name="fab_choose_location">انتخاب مقصد</string>
+    <string name="card_pin_title">مقصد انتخاب‌شده</string>
+    <string name="card_pin_hint">جابه‌جایی و بزرگ‌نمایی فقط پیش‌نمایش است؛ برای انتخاب لمس طولانی یا «انتخاب مقصد» را بزنید.</string>
+    <string name="card_pin_save">ذخیره</string>
+    <string name="card_pin_copy">کپی</string>
+    <string name="card_pin_share">اشتراک</string>
+    <string name="card_pin_range">از موقعیت شبیه‌سازی‌شده: %1$s · %2$s</string>
+    <string name="map_no_destination">مقصدی انتخاب نشده</string>
+    <string name="map_center_preview">پیش‌نمایش مرکز نقشه: %1$s</string>
+    <string name="map_set_destination">انتخاب مرکز</string>
+    <string name="route_place_waypoint_here">قرار دادن نقطه در اینجا</string>
+    <string name="range_m">%1$d متر</string>
+    <string name="range_km">%1$.1f کیلومتر</string>
+    <string name="compass_n">شمال</string>
+    <string name="compass_ne">شمال‌شرق</string>
+    <string name="compass_e">شرق</string>
+    <string name="compass_se">جنوب‌شرق</string>
+    <string name="compass_s">جنوب</string>
+    <string name="compass_sw">جنوب‌غرب</string>
+    <string name="compass_w">غرب</string>
+    <string name="compass_nw">شمال‌غرب</string>
+    <string name="share_location_title">اشتراک‌گذاری مقصد</string>
+    <string name="error_share_unavailable">برنامه‌ای برای دریافت این مکان پیدا نشد</string>
+
+    <!-- Task 7: search + coordinate entry -->
+    <string name="fab_search">جستجو</string>
+    <string name="search_hint">جستجوی شهر یا مکان…</string>
+    <string name="search_empty">نتیجه‌ای پیدا نشد</string>
+    <string name="search_error">جستجو ناموفق بود</string>
+    <string name="search_coord_hint">مختصات را بچسبانید یا بنویسید</string>
+    <string name="search_coord_apply">قرار دادن پین</string>
+    <string name="search_coord_invalid">مختصات معتبر نیست</string>
+    <!-- P2-4: search history + coordinate copy -->
+    <string name="search_history_title">جستجوهای اخیر</string>
+    <string name="search_copied">مختصات کپی شد</string>
+
+    <!-- Task 8: spots, recents, folders -->
+    <string name="spots_title">مکان‌ها</string>
+    <!-- P3a: accessible name for the glyph-only Spots pill (TalkBack). -->
+    <string name="pill_spots">مکان‌ها</string>
+    <string name="spots_done">تمام</string>
+    <string name="spot_save_title">ذخیرهٔ مکان انتخاب‌شده</string>
+    <string name="spot_name_hint">نام این مکان</string>
+    <string name="spot_saved">مکان ذخیره شد</string>
+    <string name="csv_import_button">درون‌ریزی CSV</string>
+    <string name="csv_export_button">برون‌بری CSV</string>
+    <string name="csv_import_preview_title">بازبینی مکان‌های درون‌ریزی</string>
+    <plurals name="csv_import_preview_count">
+        <item quantity="one">%1$d مکان بدون پوشه درون‌ریزی می‌شود. تا تأیید شما تغییری انجام نمی‌شود.</item>
+        <item quantity="other">%1$d مکان بدون پوشه درون‌ریزی می‌شود. تا تأیید شما تغییری انجام نمی‌شود.</item>
+    </plurals>
+    <string name="csv_import_apply">درون‌ریزی مکان‌ها</string>
+    <plurals name="csv_imported_count">
+        <item quantity="one">%1$d مکان درون‌ریزی شد</item>
+        <item quantity="other">%1$d مکان درون‌ریزی شد</item>
+    </plurals>
+    <string name="csv_export_success">فایل CSV مکان‌ها صادر شد</string>
+    <string name="csv_io_error">خواندن یا نوشتن فایل CSV ممکن نشد</string>
+    <string name="error_csv_invalid">فایل CSV نامعتبر است یا ردیف پشتیبانی‌نشده دارد</string>
+    <string name="spots_empty">هنوز مکانی اینجا نیست</string>
+    <string name="spots_recents">اخیر</string>
+    <string name="spots_recents_ago">%1$d دقیقه پیش</string>
+    <string name="spots_recents_clear">پاک کردن</string>
+    <string name="spots_recents_clear_manual">پاک‌کردن پین‌های نقشه</string>
+    <string name="spots_recents_clear_manual_title">موارد قدیمی پین نقشه حذف شوند؟</string>
+    <plurals name="spots_recents_clear_manual_text">
+        <item quantity="one">فقط %1$d مورد اخیر با برچسب «پین دستی» حذف شود؟ مکان‌های ذخیره‌شده و موارد دیگر باقی می‌مانند.</item>
+        <item quantity="other">فقط %1$d مورد اخیر با برچسب «پین دستی» حذف شود؟ مکان‌های ذخیره‌شده و موارد دیگر باقی می‌مانند.</item>
+    </plurals>
+    <string name="spots_recents_clear_title">پاک کردن موارد اخیر؟</string>
+    <string name="spots_recents_clear_text">این کار فهرست پرش‌ها را حذف می‌کند. مکان‌های ذخیره‌شده باقی می‌مانند.</string>
+    <string name="spots_recents_clear_yes">پاک کردن</string>
+    <string name="spots_recents_empty">هنوز پرش اخیری نیست — پین بیندازید یا مکانی برگزینید</string>
+    <string name="session_start_recent">شروع سشن</string>
+    <string name="menu_edit_location">ویرایش مکان</string>
+    <string name="folder_rename_title">تغییر نام پوشه</string>
+    <string name="folder_delete">حذف پوشه</string>
+    <string name="folder_delete_title">حذف پوشه؟</string>
+    <string name="folder_delete_text">«%1$s» حذف شود؟ مکان‌های آن حفظ می‌شوند و بدون پوشه می‌شوند.</string>
+    <string name="error_duplicate_name">این نام قبلاً استفاده شده است</string>
+    <string name="error_coords_invalid">مختصات معتبر وارد کنید (عرض −۸۵ تا ۸۵، طول −۱۸۰ تا ۱۸۰)</string>
+    <string name="dialog_latitude">عرض جغرافیایی</string>
+    <string name="dialog_longitude">طول جغرافیایی</string>
+    <string name="dialog_coords_invalid">مختصات معتبر وارد کنید (عرض −۸۵ تا ۸۵، طول −۱۸۰ تا ۱۸۰)</string>
+    <string name="spots_default_folder">پیش‌فرض</string>
+    <string name="menu_rename">تغییر نام</string>
+    <string name="menu_move">انتقال به پوشه…</string>
+    <string name="menu_delete">حذف</string>
+    <string name="dialog_rename_title">تغییر نام مکان</string>
+    <string name="rename_hint">نام</string>
+    <string name="delete_confirm_title">حذف مکان</string>
+    <string name="delete_confirm_text">«%1$s» حذف شود؟ این کار بازگشت‌پذیر نیست.</string>
+    <string name="dialog_delete">حذف</string>
+    <string name="dialog_save">ذخیره</string>
+    <string name="dialog_cancel">لغو</string>
+    <string name="move_title">انتقال به پوشه</string>
+    <string name="move_unfiled">بدون پوشه</string>
+    <string name="folder_new">پوشه جدید</string>
+    <string name="folder_name_hint">نام پوشه</string>
+
+    <!-- Task 9: setup wizard -->
+    <string name="wizard_title">راه‌اندازی</string>
+    <string name="wizard_step_dev_title">فعال کردن گزینه‌های توسعه‌دهنده</string>
+    <string name="wizard_step_dev_body">GhostRoute موقعیت‌های جعلی را از طریق سامانه mock-location اندروید ارسال می‌کند. این سامانه تنها وقتی گزینه‌های توسعه‌دهنده فعال باشد وجود دارد — یک کلید یک‌باره. «باز کردن تنظیمات» را بزنید و گزینه‌های توسعه‌دهنده را روشن کنید.</string>
+    <string name="wizard_step_mock_title">انتخاب برنامه mock location</string>
+    <string name="wizard_step_mock_body">در گزینه‌های توسعه‌دهنده، «Select mock location app» را پیدا کنید و GhostRoute را انتخاب کنید. تنها مجوزی است که اندروید هیچ‌وقت پنجره‌ای برایش نشان نمی‌دهد. برای رفتن آنجا «باز کردن تنظیمات» را بزنید.</string>
+    <string name="wizard_picker_guide_title">کجا را لمس کنیم</string>
+    <string name="wizard_picker_guide_body">باز کردن تنظیمات ← گزینه‌های توسعه‌دهنده ← «Select mock location app» ← GhostRoute. به اینجا برگردید — تیک تایید با بازگشت به‌روز می‌شود.</string>
+    <!-- P0: راهنمای راه‌اندازی صفحهٔ اول (HTML همراه برنامه، انگلیسی + فارسی، داخل برنامه). -->
+    <string name="about_guide_title">GhostRoute — راهنمای راه‌اندازی</string>
+    <string name="about_guide_open">راهنمای گام‌به‌گام (حالت توسعه‌دهنده و شروع کار)</string>
+    <string name="wizard_step_notif_title">اجازه اعلان‌ها</string>
+    <string name="wizard_step_notif_body">اندروید هنگام شبیه‌سازی موقعیت، یک اعلان نمایان می‌خواهد. مجاز نگه‌داشتن آن همچنین امکان توقف شبیه‌سازی را از همین سایه‌بان فراهم می‌کند.</string>
+    <string name="wizard_step_done_title">همه چیز آماده است</string>
+    <string name="wizard_step_done_body">راه‌اندازی کامل شد. می‌توانید روی نقشه یک سنجاق بگذارید و با «Go» شبیه‌سازی را آغاز کنید. اگر بررسی‌ای قرمز شد، هر وقت خواستید به راه‌اندازی برگردید.</string>
+    <string name="wizard_open_settings">باز کردن تنظیمات</string>
+    <string name="wizard_all_set">شروع</string>
+    <string name="wizard_status_dev">گزینه‌های توسعه‌دهنده</string>
+    <string name="wizard_status_mock">برنامه mock location</string>
+    <string name="wizard_status_notif">اعلان‌ها</string>
+    <string name="wizard_status_overlay">مجوز همپوشانی</string>
+    <string name="wizard_status_overlay_optional">اختیاری — تنها برای جوی‌استیک شناور لازم است</string>
+    <string name="wizard_status_ok">داده شد</string>
+    <string name="wizard_status_pending">در انتظار</string>
+
+    <!-- تسک ۱۰: ویجت -->
+    <string name="widget_status_off">خاموش</string>
+    <string name="widget_status_on">در حال اجرا</string>
+    <string name="widget_action_start">شروع</string>
+    <string name="widget_action_stop">توقف</string>
+
+    <!-- تسک ۱۰: مقادیر منتقل‌شده از کامپوز (متای کارت پین، نمایش مختصات، شمارنده تزریق) -->
+    <string name="format_coords_3">%1$.3f، %2$.3f</string>
+    <string name="format_coords_4">%1$.4f، %2$.4f</string>
+    <string name="chip_injected_count">+%1$d</string>
+    <!-- Task 10.5: IP/VPN location sync chip (one tap toggles; states inform). -->
+    <string name="chip_ip_sync_on">زنده با IP · روشن</string>
+    <string name="chip_ip_sync_off">زنده با IP · خاموش</string>
+    <string name="chip_ip_sync_manual">زنده با IP · خاموش (مکان دستی)</string>
+    <string name="chip_ip_sync_stale">زنده با IP · کهنه</string>
+
+    <!-- P1-1c: بخش IP/VPN زیر چیپ‌ها (تشخیص، کهنگی، نشت، فاصله به‌روزرسانی) -->
+    <string name="ip_details_title">IP عمومی · خروجی VPN</string>
+    <string name="ip_details_none">هنوز داده‌ای از IP نیست</string>
+    <string name="ip_provider">منبع · %1$s</string>
+    <string name="ip_last_update_ago">آخرین به‌روزرسانی %1$d دقیقه پیش</string>
+    <string name="ip_last_update_just_now">آخرین به‌روزرسانی همین حالا</string>
+    <string name="ip_stale_prefix">کهنه: %1$s</string>
+    <string name="ip_leak_warning">نشت IPv6: ترافیک IPv4 و IPv6 از مکان‌های متفاوتی خارج می‌شود</string>
+    <string name="ip_info_action">درباره زنده با IP</string>
+    <string name="ip_info_dialog_title">زنده با IP و تشخیص VPN</string>
+    <string name="ip_info_leak_body">این هشدار یعنی درخواست‌های IPv4 و IPv6 شما از جای متفاوتی از شبکه خارج می‌شوند — معمولاً ترافیک IPv6 تحت پوشش تونل VPN نیست. این هشدار مکان شبیه‌سازی‌شده را جابه‌جا نمی‌کند و فقط ناهماهنگی مسیریابی را نشان می‌دهد.</string>
+    <string name="ip_info_split_tunnel_body">بسیاری از برنامه‌های VPN فقط برنامه‌های انتخاب‌شده را تونل می‌کنند. اگر GhostRoute مستثنا شده باشد، درخواست‌های آن به‌جای VPN از اتصال واقعی شما عبور می‌کنند. برای رفع آن، GhostRoute را به فهرست تونل VPN خود اضافه کنید (تنظیمات split tunneling برنامه VPN).</string>
+    <string name="ip_info_gps_body">تغییر مکان GPS شبیه‌سازی‌شده هرگز IP عمومی واقعی دستگاه را تغییر نمی‌دهد — این دو مستقل از هم هستند.</string>
+    <string name="ip_refresh_interval_label">فاصله به‌روزرسانی IP</string>
+    <string name="ip_refresh_manual">دستی</string>
+    <string name="ip_refresh_60">۶۰ ثانیه</string>
+    <string name="ip_refresh_2m">۲ دقیقه</string>
+    <string name="ip_refresh_5m">۵ دقیقه</string>
+
+    <!-- P1 rework: manual refresh + explicit adopt action + local/public
+         distinction + honest tunnel status. en/fa parity machine-checked. -->
+    <string name="ip_refresh_now">همین حالا به‌روزرسانی کن</string>
+    <string name="ip_use_location">استفاده از مکان IP</string>
+    <string name="ip_public_line">عمومی · %1$s</string>
+    <string name="ip_local_line">محلّی دستگاه · %1$s</string>
+    <string name="ip_tunnel_through">درخواست‌ها از تونل VPN عبور می‌کنند</string>
+    <string name="ip_tunnel_bypassed">این برنامه از تونل VPN بیرون می‌ماند (تقسیم تونل) — مکان نمایش‌داده‌شده خروجی VPN نیست</string>
+    <string name="ip_tunnel_none">تونل VPN شناسایی نشد</string>
+    <!-- P6a: تاریخچه IP (خط زمانی، نگهداری، پاک‌کردن، خروجی CSV) -->
+    <string name="ip_hist_title">تاریخچه IP</string>
+    <string name="ip_hist_empty">هنوز تاریخچه‌ای از IP ثبت نشده</string>
+    <string name="ip_hist_recording_off">ثبت خاموش است — تاریخچه‌ای نگهداری نمی‌شود (فقط آخرین استعلام برای ازسرگیری پس از راه‌اندازی دوباره نگه داشته می‌شود)</string>
+    <string name="ip_hist_row_ago">%1$d دقیقه پیش</string>
+    <string name="ip_hist_row_time_unknown">زمان نامعلوم</string>
+    <string name="ip_hist_share">اشتراک به‌صورت CSV</string>
+    <string name="ip_hist_clear">پاک‌کردن</string>
+    <string name="ip_hist_clear_title">تاریخچه IP پاک شود؟</string>
+    <string name="ip_hist_clear_text">همه IPهای ثبت‌شده از این دستگاه حذف می‌شوند.</string>
+    <string name="ip_hist_clear_confirm">پاک‌کردن</string>
+    <string name="ip_hist_retention_label">نگهداری</string>
+    <string name="ip_hist_retention_off">خاموش (هیچ چیزی ثبت نمی‌شود)</string>
+    <!-- P1-3a: برگ تنظیمات (ورودی دایره‌ای روی نقشه، سبک شیت خانه). -->
+    <string name="pill_settings">تنظیمات</string>
+    <string name="pill_more">بیشتر</string>
+    <string name="tools_title">ابزارهای بیشتر</string>
+    <string name="tools_done">تمام</string>
+    <string name="settings_title">تنظیمات</string>
+    <string name="settings_map_style">سبک نقشه</string>
+    <string name="settings_map_style_dark">تیره</string>
+    <string name="settings_map_style_liberty">آزادی</string>
+    <string name="settings_map_style_light">روشن</string>
+    <!-- P4b: جوی‌استیک شناور -->
+    <string name="settings_joystick">جوی‌استیک شناور</string>
+    <string name="settings_joystick_desc">یک دستهٔ کوچک و قابل جابه‌جایی روی سایر برنامه‌ها برای هُل دادن نقطهٔ شبیه‌سازی‌شده هنگام فعال بودن شبیه‌سازی.</string>
+    <string name="settings_joystick_hint">فقط هنگام اجرای شبیه‌سازی نمایش داده می‌شود؛ در حین مسیرهای متحرک در دسترس نیست، زیرا دسته مسیر را هدایت نمی‌کند.</string>
+    <string name="joystick_explainer_title">نمایش روی سایر برنامه‌ها</string>
+    <string name="joystick_explainer_body">جوی‌استیک شناور یک دستهٔ کوچک روی سایر برنامه‌ها نشان می‌دهد تا بتوانید بدون بازگشت به GhostRoute نقطهٔ مکان شبیه‌سازی‌شده را جابه‌جا کنید. اندروید برای این کار مجوز «نمایش روی سایر برنامه‌ها» را لازم می‌داند — GhostRoute از آن فقط برای همان دسته و فقط هنگام اجرای شبیه‌سازی استفاده می‌کند.</string>
+    <string name="joystick_explainer_open">باز کردن تنظیمات</string>
+    <string name="joystick_explainer_later">بعداً</string>
+    <string name="joystick_pad_cd">دستهٔ جوی‌استیک</string>
+    <string name="joystick_up">هُل به شمال</string>
+    <string name="joystick_left">هُل به غرب</string>
+    <string name="joystick_right">هُل به شرق</string>
+    <string name="joystick_down">هُل به جنوب</string>
+    <string name="joystick_stop">توقف شبیه‌سازی</string>
+    <string name="joystick_minimize">کوچک کردن جوی‌استیک</string>
+    <string name="joystick_expand">بزرگ کردن جوی‌استیک</string>
+    <string name="joystick_speed_cd">فاصلهٔ هُل — برای تغییر لمس کنید</string>
+    <string name="joystick_speed_value">%1$d متر</string>
+    <string name="settings_about">درباره</string>
+    <string name="settings_diagnostics">عیب‌یابی</string>
+
+    <!-- P2-5b: پشتیبان‌گیری و بازیابی (برون‌بری/درون‌بری SAF؛ JSON نسخه‌دار
+         — فقط مکان‌ها، پوشه‌ها، مسیرها، پروفایل‌های رزرو و تنظیمات؛
+         جلسات/تاریخچه/وضعیت دستگاه عمداً در پشتیبان نیستند). -->
+    <string name="settings_backup">پشتیبان‌گیری</string>
+    <string name="backup_export">برون‌بری پشتیبان</string>
+    <!-- P3c: in-flight state while a backup export/import runs. -->
+    <string name="backup_busy">در حال کار…</string>
+    <string name="backup_import">درون‌بری پشتیبان</string>
+    <string name="backup_done_export">پشتیبان ذخیره شد</string>
+    <string name="backup_summary_folders">پوشه‌ها: %1$d درون‌بری، %2$d حفظ‌شده، %3$d ردشده</string>
+    <string name="backup_summary_spots">مکان‌ها: %1$d درون‌بری، %2$d حفظ‌شده، %3$d ردشده</string>
+    <string name="backup_summary_routes">مسیرها: %1$d درون‌بری، %2$d حفظ‌شده</string>
+    <string name="backup_summary_settings_changed">تنظیمات به‌روزرسانی شد</string>
+    <string name="backup_summary_settings_unchanged">تنظیمات بدون تغییر</string>
+    <string name="backup_error_newer_version">این پشتیبان با نسخه جدیدتری از GhostRoute ساخته شده است</string>
+    <string name="backup_error_invalid">فایل پشتیبان معتبر GhostRoute نیست</string>
+    <string name="backup_error_read">خواندن فایل انتخاب‌شده ممکن نشد</string>
+    <string name="backup_error_write">نوشتن فایل پشتیبان ممکن نشد</string>
+
+    <!-- P1-3b: برگ درباره — نسخه از BuildConfig؛ مجوزها از POM وابستگی‌ها تأیید شده‌اند. -->
+    <string name="about_version">نسخه %1$s · ساخت %2$d</string>
+    <string name="about_credits_title">قدردانی</string>
+    <string name="about_credit_role_map">نقشه</string>
+    <string name="about_credit_role_tiles">کاشی‌های نقشه</string>
+    <string name="about_credit_role_search">جستجوی مکان</string>
+    <string name="about_credit_role_ip">استعلام IP</string>
+    <string name="about_credit_role_core">هسته</string>
+    <string name="about_privacy_title">حریم خصوصی</string>
+    <string name="about_privacy_network">تنها درخواست‌های شبکه‌ای که GhostRoute می‌فرستد: %1$s.</string>
+    <string name="about_privacy_no_telemetry">بدون تحلیل‌گر، بدون ردیابی، بدون تلمتری — چیز دیگری از دستگاه شما خارج نمی‌شود.</string>
+    <string name="about_links_failed">لینک باز نشد — ابتدا یک مرورگر یا تلگرام نصب کنید.</string>
+
+    <!-- P1-3c: برگ عیب‌یابی — فقط داده واقعی؛ راهنمای رفع خطا؛ دکمه اشتراک همان محتوای روی صفحه. -->
+    <string name="diag_service">شبیه‌ساز</string>
+    <string name="diag_injected">نمونه‌های تزریق‌شده</string>
+    <string name="diag_count_value">%1$d</string>
+    <string name="diag_last_sample">آخرین نمونه</string>
+    <string name="diag_last_lookup">آخرین استعلام IP</string>
+    <string name="diag_ago_minutes">%1$d دقیقه پیش</string>
+    <string name="diag_ip_sync">زنده با IP</string>
+    <string name="diag_sec_value">%1$d ثانیه</string>
+    <string name="diag_share">اشتراک گزارش</string>
+    <string name="diag_all_ok">همه‌چیز درست است — جایگاه mock داده شده است.</string>
+    <string name="diag_fix_deselected">اجرای mock متوقف شد: هم‌اکنون برنامه دیگری به‌عنوان برنامه mock location انتخاب شده است. در گزینه‌های توسعه‌دهنده، «Select mock location app» را بزنید و GhostRoute را برگزینید، سپس شبیه‌سازی را دوباره آغاز کنید.</string>
+    <string name="diag_fix_cleared">اجرای mock متوقف شد: دسترسی mock-location پس گرفته شد. گزینه‌های توسعه‌دهنده ← «Select mock location app» را باز کنید و دوباره GhostRoute را انتخاب کنید.</string>
+    <string name="diag_fix_dev_mode">جایگاه mock داده نشده و گزینه‌های توسعه‌دهنده خاموش است. گزینه‌های توسعه‌دهنده را روشن کنید، سپس در «Select mock location app» GhostRoute را برگزینید.</string>
+    <string name="diag_fix_generic">جایگاه mock داده نشده است. گزینه‌های توسعه‌دهنده ← «Select mock location app» را باز کنید، GhostRoute را برگزینید و شبیه‌سازی را دوباره آغاز کنید.</string>
+    <!-- P2-1b: برگ خط زمانی (F-50) — سشن‌های ضبط‌شده، تغییر نام/حذف (زیرنویس حذف،
+         حذف زنجیره‌ای موقعیت‌ها را توضیح می‌دهد)، تأیید پاک‌کردن همه و ردیف روزهای نگهداری. -->
+    <string name="pill_timeline">خط زمانی</string>
+    <string name="timeline_title">خط زمانی سشن‌ها</string>
+    <string name="timeline_empty">هنوز سشنی ضبط نشده — برای ساختنش شبیه‌سازی را شروع کنید.</string>
+    <string name="timeline_session_untitled">سشن بی‌نام</string>
+    <string name="timeline_positions_count">%1$d موقعیت</string>
+    <string name="timeline_rename_title">تغییر نام سشن</string>
+    <string name="timeline_delete_title">حذف سشن؟</string>
+    <string name="timeline_delete_text">این کار همهٔ %1$d موقعیت ضبط‌شدهٔ این سشن را هم حذف می‌کند.</string>
+    <string name="timeline_delete_text_none">این سشن موقعیت ضبط‌شده‌ای ندارد؛ فقط ردیف خود سشن حذف می‌شود.</string>
+    <string name="timeline_delete_confirm">حذف</string>
+    <string name="timeline_clear_all">پاک کردن همه</string>
+    <string name="timeline_clear_title">حذف همهٔ سشن‌ها؟</string>
+    <string name="timeline_clear_text">همهٔ سشن‌ها و تمام موقعیت‌های ضبط‌شدهٔ آن‌ها حذف می‌شوند.</string>
+    <string name="timeline_clear_confirm">پاک کردن</string>
+    <string name="timeline_retention_label">نگهداری سشن‌ها</string>
+    <string name="timeline_retention_days">%1$d روز</string>
+    <string name="timeline_retention_forever">همیشه</string>
+    <string name="timeline_route_on_map">مسیر روی نقشه نمایش داده می‌شود</string>
+    <!-- P2-2b Route Studio -->
+    <string name="pill_route">مسیر</string>
+    <string name="route_title">استودیوی مسیر</string>
+    <string name="route_add_waypoint">افزودن نقطه</string>
+    <string name="route_remove">حذف</string>
+    <string name="route_move_up">بالا</string>
+    <string name="route_move_down">پایین</string>
+    <string name="route_move_hint">نقطه انتخاب شد: نقشه را بکشید و برای ثبت رها کنید.</string>
+    <string name="route_loop">حلقه</string>
+    <string name="route_reversed">معکوس</string>
+    <string name="route_speed">سرعت</string>
+    <string name="route_speed_value">%1$.1f متر/ثانیه</string>
+    <string name="route_estimate">برآورد</string>
+    <string name="route_distance_km">%1$.2f کیلومتر</string>
+    <string name="route_distance_m">%1$d متر</string>
+    <string name="route_duration_hm">%1$d ساعت %2$02d دقیقه</string>
+    <string name="route_duration_ms">%1$d دقیقه %2$02d ثانیه</string>
+    <string name="route_duration_s">%1$d ثانیه</string>
+    <string name="route_save">ذخیره</string>
+    <string name="route_activate">اجرای مسیر</string>
+    <string name="route_pause">توقف</string>
+    <string name="route_resume">ادامه</string>
+    <string name="route_restart">شروع مجدد</string>
+    <string name="route_saved_routes">مسیرهای ذخیره‌شده</string>
+    <string name="route_section_waypoints">نقطه‌ها</string>
+    <string name="route_routes_empty">هنوز مسیری ذخیره نشده است</string>
+    <string name="route_empty">هنوز نقطه‌ای نیست — نقشه را جابه‌جا کنید و «افزودن نقطه» را بزنید.</string>
+    <string name="route_needs_two">مسیر حداقل به دو نقطه نیاز دارد.</string>
+    <string name="route_points_count">%1$d نقطه</string>
+    <string name="route_gpx_import">وارد کردن GPX</string>
+    <string name="route_gpx_export">ذخیره GPX</string>
+    <string name="route_gpx_error">فایل GPX وارد نشد — مسیر بدون تغییر ماند.</string>
+    <string name="route_name_hint">نام مسیر</string>
+    <string name="route_delete_title">این مسیر حذف شود؟</string>
+    <string name="route_delete_text">مسیر ذخیره‌شدهٔ «%1$s» و نقاطش حذف می‌شوند. محتوای فعلی ویرایشگر حفظ می‌شود.</string>
+    <string name="route_discard_title">ویرایش‌های ذخیره‌نشده کنار گذاشته شوند؟</string>
+    <string name="route_discard_text">بارگیری یا درون‌ریزی یک مسیر، ویرایش‌های ذخیره‌نشدهٔ شما را جایگزین می‌کند.</string>
+    <string name="route_discard_confirm">کنار گذاشتن</string>
+    <string name="route_waypoint_n">%1$d</string>
+    <!-- P2-3: داشبورد نشست — سنجه‌های زندهٔ نشست؛ مقدار ناشناخته = خط تیرهٔ صادق -->
+    <string name="pill_dashboard">داشبورد</string>
+    <string name="dashboard_title">داشبورد نشست</string>
+    <string name="dashboard_idle">هیچ نشستی در حال اجرا نیست. در حالت آماده، مقادیر زنده «—» نشان می‌دهند و با شروع شبیه‌سازی همه زنده می‌شوند.</string>
+    <string name="dashboard_coords">مختصات</string>
+    <string name="dashboard_speed">سرعت</string>
+    <string name="dashboard_speed_value">%1$.1f متر بر ثانیه</string>
+    <string name="dashboard_speed_pending">در انتظار اولین نمونه…</string>
+    <string name="dashboard_elapsed">زمان سپری‌شده</string>
+    <string name="dashboard_elapsed_hms">%1$02d:%2$02d:%3$02d</string>
+    <string name="dashboard_elapsed_ms">%1$02d:%2$02d</string>
+    <string name="dashboard_distance">مسافت</string>
+    <string name="dashboard_profile">پروفایل</string>
+    <string name="dashboard_profile_static">لنگر (ثابت)</string>
+    <string name="dashboard_profile_jitter">لرزش · شعاع %1$.0f متری</string>
+    <string name="dashboard_profile_route">مسیر · %1$d نقطه · %2$s · %3$.1f متر بر ثانیه</string>
+    <string name="dashboard_route_mode_once">یک‌باره</string>
+    <string name="dashboard_route_mode_loop">حلقه‌ای</string>
+    <string name="dashboard_route_mode_pingpong">رفت‌وبرگشتی</string>
+    <string name="dashboard_ip">IP عمومی</string>
+    <string name="dashboard_dash">—</string>
+    <!-- P2-6b: پروفایل‌های مکانی (خط ۴۷ نقشه‌راه) -->
+    <string name="pill_profiles">پروفایل‌ها</string>
+    <string name="profiles_title">پروفایل‌ها</string>
+    <string name="profiles_empty">هنوز پروفایلی نیست. مکانی انتخاب کنید یا مسیری را شروع کنید، سپس «ذخیرهٔ تنظیمات فعلی» را بزنید.</string>
+    <string name="profiles_activate">فعال‌سازی</string>
+    <string name="profiles_duplicate">تکثیر</string>
+    <string name="profiles_blocked_manual_pin">مسدود شد: یک پین دستی فعال است — فعال‌سازی هرگز آن را بازنویسی نمی‌کند.</string>
+    <string name="profiles_blocked_invalid">مسدود شد: این پروفایل خراب شده و دیگر قابل فعال‌سازی نیست.</string>
+    <string name="profiles_source_label">موقعیت</string>
+    <string name="profiles_source_pin">پین فعلی</string>
+    <string name="profiles_source_last_run">آخرین اجرا</string>
+    <string name="profiles_spot_none">مکان ذخیره‌شده‌ای نیست</string>
+    <string name="profiles_route_none">مسیر ذخیره‌شده‌ای نیست</string>
+    <string name="profiles_mode_label">حالت مسیر</string>
+    <string name="profiles_mode_loop">حلقه‌ای</string>
+    <string name="profiles_mode_pingpong">رفت‌وبرگشتی</string>
+    <string name="profiles_mode_once">یک‌باره</string>
+    <string name="profiles_speed_hint">سرعت متر بر ثانیه (خالی = پیش‌فرض موتور)</string>
+    <string name="profiles_numbers_invalid">نام، موقعیت و اعداد را بررسی کنید.</string>
+    <string name="profiles_delete_title">حذف پروفایل</string>
+    <string name="profiles_delete_text">«%1$s» حذف شود؟ این کار بازگشت‌پذیر نیست.</string>
+    <string name="profiles_dirty_title">تغییرات دور ریخته شود؟</string>
+    <string name="profiles_dirty_text">با بستن همین حالا، ویرایش‌های ذخیره‌نشده دور ریخته می‌شوند.</string>
+    <string name="profiles_dirty_confirm">دور ریختن</string>
+    <string name="profiles_dirty_keep">ادامه ویرایش</string>
+    <string name="backup_summary_profiles">پروفایل‌ها: %1$d درون‌ریزی، %2$d بدون تغییر</string>
+
+    <!-- P4c: automation intake + launcher shortcuts (docs/intents.md) -->
+    <string name="shortcut_stop">توقف</string>
+    <string name="shortcut_stop_long">توقف شبیه‌سازی</string>
+    <string name="shortcut_last">آخرین مکان</string>
+    <string name="shortcut_last_long">گشودن آخرین مکان شبیه‌سازی‌شده</string>
+    <string name="error_intake_spot_not_found">مکان ذخیره‌شده پیدا نشد</string>
+    <string name="error_intake_route_not_found">مسیر ذخیره‌شده پیدا نشد</string>
+    <string name="error_intake_malformed">درخواست اتوماسیون نامعتبر است</string>
+    <string name="error_intake_no_last">مکان آخر ذخیره نشده است</string>
+
+    <!-- P4d: dashboard route remaining + map quick access (recents) -->
+    <string name="dashboard_route_remaining">باقی‌مانده مسیر</string>
+    <string name="dashboard_route_remaining_value">%1$s از %2$s</string>
+
+    <!-- Verified feature pass -->
+    <string name="route_undo">واگرد</string>
+    <string name="route_redo">ازنو</string>
+    <string name="route_reverse">وارون‌کردن مسیر</string>
+    <string name="route_preset_walk">پیاده</string>
+    <string name="route_preset_cycle">دوچرخه</string>
+    <string name="route_preset_drive">خودرو</string>
+    <string name="route_pick_on_map">جابه‌جایی نقطه روی نقشه</string>
+    <string name="route_gpx_importing">در حال خواندن GPX…</string>
+    <string name="route_gpx_imported">GPX وارد شد</string>
+    <string name="route_gpx_exporting">در حال نوشتن GPX…</string>
+    <string name="route_gpx_exported">GPX صادر شد</string>
+    <string name="route_gpx_export_error">نوشتن GPX ناموفق بود؛ فایل مقصد ممکن است ناقص باشد.</string>
+    <string name="route_gpx_too_large">فایل GPX باید حداکثر ۵ مگابایت باشد. مسیر تغییر نکرد.</string>
+    <string name="route_point_limit">هر مسیر حداکثر ۲۰۰۰ نقطه دارد. تغییری انجام نشد.</string>
+    <string name="route_start_error">شروع مسیر ممکن نشد. راه‌اندازی را بررسی کنید.</string>
+    <string name="route_send_error">فرمان مسیر ارسال نشد. وضعیت اجرا را بررسی کنید.</string>
+    <string name="route_load_error">خواندن مسیر ذخیره‌شده ناموفق بود. مسیر فعلی حفظ شد.</string>
+    <string name="route_loop_hint">حلقه مسیر باز را تکرار می‌کند و از آخر به ابتدا می‌پرد. بازگشت در برآورد لحاظ نمی‌شود.</string>
+    <string name="route_pingpong_hint">رفت‌وبرگشت مسیر را در دو جهت می‌رود. برآورد برای یک پیمایش رو به جلو است.</string>
+    <string name="profile_start">شروع پروفایل</string>
+    <string name="profile_applying">اعمال پروفایل…</string>
+    <string name="profile_failed">اعمال یا ارسال تنظیمات ناموفق بود. راه‌اندازی را بررسی کنید.</string>
+    <string name="profile_ready">پروفایل روی نقشه آماده شد. برای شروع «برو» را بزنید.</string>
+    <string name="profile_selected">پروفایل آماده: %1$s</string>
+    <string name="apply_selected">اعمال مقصد اکنون</string>
+    <string name="recenter_live">نمایش موقعیت شبیه‌سازی‌شده</string>
+    <string name="timer_title">توقف خودکار</string>
+    <string name="timer_hint">زمان توقف اجرای فعلی را انتخاب کنید. زمان‌سنج پس از بسته‌شدن فرایند حفظ نمی‌شود.</string>
+    <string name="timer_start_first">ابتدا شبیه‌سازی را شروع کنید.</string>
+    <string name="timer_deadline">توقف در %1$s</string>
+    <string name="timer_minutes">پس از %1$d دقیقه</string>
+    <string name="timer_cancel">لغو زمان‌سنج</string>
+    <string name="backup_error_apply">بازیابی کامل نشد. تغییرات پایگاه‌داده تا حد ممکن برگردانده شد؛ تنظیمات ممکن است نیاز به بررسی داشته باشد. فایل پشتیبان را نگه دارید و پیش از تلاش دوباره داده‌ها را بررسی کنید.</string>
+    <string name="route_add_on_map">افزودن نقطه روی نقشه</string>
+
+    <!-- Night navigation design -->
+    <string name="ui_destination_caption">یک مکان انتخاب کنید. حرکت بعدی با شماست.</string>
+    <string name="ui_coordinate_value">%1$.5f</string>
+    <string name="ui_network_title">شبکه و IP</string>
+    <string name="ui_network_details">جزئیات شبکه را باز کنید</string>
+    <string name="ui_network_warning">هشدار شبکه · مشاهده جزئیات</string>
+    <string name="ui_toolkit_caption">همه‌چیز برای مسیر بعدی شما</string>
+    <string name="ui_create_group">ساختن و کاوش</string>
+    <string name="ui_session_group">اجرای شما</string>
+    <string name="ui_app_group">تنظیمات برنامه</string>
+    <string name="ui_edit_profile">ویرایش پروفایل</string>
+
+    <!-- 0.5.0: Follow roads -->
+    <string name="roads_title">دنبال‌کردن جاده‌ها</string>
+    <string name="roads_hint">مسیر را به‌جای خط مستقیم روی جاده‌های واقعی می‌نشاند. شروع و اعمال از مسیر جاده‌ای استفاده می‌کنند.</string>
+    <string name="roads_profile_foot">از مسیرهای پیاده استفاده می‌شود (سرعت تا ۹ کیلومتر بر ساعت)</string>
+    <string name="roads_profile_bike">از مسیرهای دوچرخه استفاده می‌شود (سرعت تا ۲۵ کیلومتر بر ساعت)</string>
+    <string name="roads_profile_car">از جاده‌های خودرو استفاده می‌شود</string>
+    <string name="roads_preview">نمایش مسیر جاده‌ای</string>
+    <string name="roads_fetching">در حال یافتن جاده‌ها…</string>
+    <string name="roads_ready">مسیر جاده‌ای آماده است: %1$s روی %2$d نقطه.</string>
+    <string name="roads_simplified">مسیر طولانی برای جاگرفتن ساده شد؛ حداکثر %1$d متر از جاده فاصله دارد.</string>
+    <string name="roads_privacy">تا زمانی که این گزینه روشن است، نقاط مسیر شما برای یافتن جاده به routing.openstreetmap.de (داده‌های OpenStreetMap) فرستاده می‌شود. وقتی خاموش است چیزی ارسال نمی‌شود.</string>
+    <string name="roads_err_no_road">یکی از نقاط بیش از ۵۰۰ متر از هر جادهٔ مناسب فاصله دارد. آن را نزدیک‌تر به جاده ببرید.</string>
+    <string name="roads_err_no_route">این نقاط با جاده‌های این نوع به هم وصل نیستند (مثلاً آن سوی آب).</string>
+    <string name="roads_err_network">به سرویس مسیریابی دسترسی پیدا نشد. اتصال را بررسی کنید. چیزی شروع نشد.</string>
+    <string name="roads_err_server">سرویس مسیریابی شلوغ یا در دسترس نیست. بعداً دوباره امتحان کنید. چیزی شروع نشد.</string>
+    <string name="roads_err_too_many">دنبال‌کردن جاده‌ها تا ۱۰۰ نقطه پشتیبانی می‌شود.</string>
+    <string name="roads_err_few">دست‌کم دو نقطه اضافه کنید.</string>
+    <string name="roads_err_bad">سرویس مسیریابی پاسخ غیرمنتظره‌ای فرستاد. چیزی شروع نشد.</string>
+    <string name="profile_failed_roads">برای این پروفایل مسیر جاده‌ای پیدا نشد. اتصال را بررسی کنید یا گزینهٔ دنبال‌کردن جاده‌ها را در استودیوی مسیر خاموش کنید.</string>
+    <string name="about_credit_role_routing">مسیریابی جاده‌ای (اختیاری)</string>
+    <string name="ip_info_live_body">«زنده با IP» باعث می‌شود مکان شبیه‌سازی‌شده از آدرس IP شما پیروی کند. آن را روشن کنید تا GhostRoute به جایی که IP شما نشان می‌دهد (مثلاً کشور خروجی VPN) برود و از آنجا شروع کند. وقتی VPN دوباره وصل شود یا سرور را عوض کنید، چند ثانیه بعد دوباره بررسی می‌کند و به مکان جدید می‌رود. اگر VPN قطع شود و برنگردد، آخرین مکان را نگه می‌دارد و از IP واقعی شما پیروی نمی‌کند؛ برای دنبال‌کردن اتصال مستقیم، «زنده با IP» را خاموش و دوباره روشن کنید. فقط هنگام اجرای شبیه‌سازی دنبال می‌کند. VPNی که بدون اتصال دوباره سرور را عوض می‌کند، با بررسی دوره‌ای شناسایی می‌شود. انتخاب مکان روی نقشه یا حرکت دادن جوی‌استیک آن را خاموش می‌کند.</string>
+
+    <!-- 0.5.0: simpler profiles -->
+    <string name="profiles_save_current">ذخیرهٔ تنظیمات فعلی</string>
+    <string name="profiles_save_current_hint">مکانی را که انتخاب کرده‌اید یا مسیری را که در حال اجراست ذخیره می‌کند تا دوباره با یک لمس شروع شود.</string>
+    <string name="profiles_save_nothing">هنوز چیزی برای ذخیره نیست. ابتدا مکانی انتخاب کنید یا مسیری را شروع کنید.</string>
+    <string name="profiles_save_failed">پروفایل ذخیره نشد. بررسی کنید که مکان یا مسیری برای ذخیره وجود داشته باشد.</string>
+    <string name="profiles_save_name_title">نام پروفایل</string>
+    <string name="profiles_build_custom">ساخت از مکان یا مسیر ذخیره‌شده</string>
+    <string name="profiles_menu_setup">آماده‌سازی روی نقشه بدون شروع</string>
+    <string name="profiles_summary_place">مکان · %1$s</string>
+    <string name="profiles_summary_route">مسیر · %1$d نقطه · %2$s · %3$d کیلومتر بر ساعت</string>
+
+    <!-- 0.5.0 audit fixes -->
+    <string name="search_history_clear">پاک‌کردن</string>
+    <string name="search_history_clear_title">تاریخچهٔ جستجو پاک شود؟</string>
+    <string name="search_history_clear_text">همهٔ جستجوهای اخیر حذف می‌شوند. مکان‌های ذخیره‌شده و اخیرها تغییری نمی‌کنند.</string>
+    <string name="ip_refresh_interval_hint">هر چند وقت «زنده با IP» در زمان روشن‌بودن IP شما را دوباره بررسی می‌کند. «دستی» فقط با لمس تازه‌سازی بررسی می‌کند. تغییر شبکه همیشه بلافاصله بررسی می‌شود.</string>
+    <string name="timeline_retention_hint">سشن‌های قدیمی‌تر دفعهٔ بعد که برنامه شروع شود حذف می‌شوند.</string>
+    <string name="chip_ip_sync_waiting_vpn">زنده با IP · در انتظار VPN</string>
+    <string name="mock_slot_banner_title">شروع نشد: مکان آزمایشی تنظیم نشده است</string>
+    <string name="mock_slot_banner_deselected">برنامهٔ دیگری به‌عنوان برنامهٔ مکان آزمایشی انتخاب شده است. در گزینه‌های توسعه‌دهنده «Select mock location app» را بزنید، GhostRoute را انتخاب کنید و دوباره «برو» را بزنید.</string>
+    <string name="mock_slot_banner_cleared">اندروید دسترسی مکان آزمایشی GhostRoute را لغو کرد. در گزینه‌های توسعه‌دهنده «Select mock location app» را بزنید، دوباره GhostRoute را انتخاب کنید و «برو» را بزنید.</string>
+    <string name="mock_slot_banner_generic">GhostRoute به‌عنوان برنامهٔ مکان آزمایشی انتخاب نشده است. در گزینه‌های توسعه‌دهنده «Select mock location app» را بزنید، GhostRoute را انتخاب کنید و دوباره «برو» را بزنید.</string>
+</resources>

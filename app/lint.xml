@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  LEDGER (Task 10, controller-sanctioned): the single issue-level disable in
+  this project. MockLocation's guidance ("request only in a test or
+  debug-specific manifest") targets test/tooling APKs — for GhostRoute,
+  ACCESS_MOCK_LOCATION IS the product surface (DESIGN §1, manifest ships in
+  release builds), so the check is a false positive here.
+-->
+<lint>
+    <issue id="MockLocation" severity="ignore" />
+</lint>

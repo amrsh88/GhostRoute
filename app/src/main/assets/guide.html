@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GhostRoute — Setup Guide</title>
+<style>
+  :root {
+    --bg: #101c1c;          /* NightSlate */
+    --surface: #16262a;     /* SlateSurface */
+    --outline: #2a4147;     /* SlateOutline */
+    --teal: #38c2b4;        /* SignalTeal */
+    --teal-dim: #8fb5b5;
+    --mist: #e6f2f2;        /* Mist on-surface */
+    --muted: #9db3b8;
+    --amber: #f5a623;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--mist);
+    font: 16px/1.6 -apple-system, "Segoe UI", Roboto, "Vazirmatn", Tahoma, sans-serif;
+    padding: 20px 16px 48px;
+  }
+  .wrap { max-width: 640px; margin: 0 auto; }
+  header { text-align: center; padding: 26px 0 10px; }
+  .logo {
+    width: 54px; height: 54px; margin: 0 auto 12px;
+    border-radius: 16px;
+    background: linear-gradient(140deg, #0d1f22, #123236);
+    border: 1px solid var(--outline);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 26px; color: var(--teal);
+  }
+  h1 { font-size: 22px; letter-spacing: 3px; font-weight: 600; margin: 0; color: var(--muted); }
+  .sub { color: var(--muted); font-size: 14px; margin-top: 6px; }
+  .lang { text-align: center; margin: 18px 0 6px; }
+  .lang a {
+    display: inline-block; padding: 8px 18px; margin: 0 6px;
+    border-radius: 999px; text-decoration: none; font-size: 14px;
+    color: var(--teal-dim); border: 1px solid var(--outline);
+    background: var(--surface);
+  }
+  .lang a:hover { color: var(--teal); border-color: var(--teal); }
+  section {
+    background: var(--surface);
+    border: 1px solid var(--outline);
+    border-radius: 18px;
+    padding: 18px 18px 8px;
+    margin: 16px 0;
+  }
+  section[dir="rtl"] h2, section[dir="rtl"] li, section[dir="rtl"] p { direction: rtl; text-align: right; }
+  h2 {
+    margin: 0 0 12px; font-size: 16px; letter-spacing: 1px;
+    color: var(--teal); display: flex; align-items: center; gap: 10px;
+  }
+  .step {
+    display: inline-flex; align-items: center; justify-content: center;
+    min-width: 26px; height: 26px; padding: 0 7px;
+    border-radius: 999px; background: rgba(56,194,180,.14);
+    color: var(--teal); font-size: 13px; font-weight: 700;
+  }
+  ol { margin: 0; padding-inline-start: 22px; }
+  li { margin: 9px 0; color: var(--mist); }
+  li b { color: var(--mist); }
+  .path {
+    font-family: ui-monospace, monospace; font-size: 13.5px;
+    background: #0d191c; border: 1px solid var(--outline);
+    border-radius: 8px; padding: 2px 8px; color: var(--teal-dim);
+    unicode-bidi: plaintext;
+  }
+  .note {
+    border-inline-start: 3px solid var(--amber);
+    background: rgba(245,166,35,.07);
+    border-radius: 8px; padding: 10px 12px; margin: 12px 0 14px;
+    color: var(--teal-dim); font-size: 14px;
+  }
+  .note[dir="rtl"] { text-align: right; }
+  .tip { color: var(--muted); font-size: 13.5px; margin-top: 4px; }
+  footer { text-align: center; color: var(--muted); font-size: 12.5px; margin-top: 30px; line-height: 1.8; }
+  footer a { color: var(--teal-dim); text-decoration: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">◉</div>
+    <h1>GHOSTROUTE</h1>
+    <div class="sub">Setup guide · راهنمای راه‌اندازی</div>
+  </header>
+
+  <div class="lang">
+    <a href="#en">English</a>
+    <a href="#fa">فارسی</a>
+  </div>
+
+  <!-- ============ ENGLISH ============ -->
+  <section id="en">
+    <h2><span class="step">1</span> Enable Developer options</h2>
+    <ol>
+      <li>Open the phone's <b>Settings</b> app.</li>
+      <li>Tap <span class="path">About phone</span> (or <span class="path">About device</span>).</li>
+      <li>Find <span class="path">Build number</span> — it may sit under
+          <span class="path">Software information</span>.</li>
+      <li>Tap <b>Build number 7 times</b>. You'll see “You are now a developer!”.</li>
+      <li>Go back to Settings → <span class="path">System</span> →
+          <span class="path">Developer options</span> (on some phones directly in Settings).</li>
+    </ol>
+    <p class="tip">Tip: the exact menu names differ slightly between brands
+    (Samsung, Xiaomi, Pixel…). "Build number" is always the key phrase.</p>
+  </section>
+
+  <section>
+    <h2><span class="step">2</span> Allow mock locations</h2>
+    <ol>
+      <li>Open <span class="path">Developer options</span>.</li>
+      <li>Scroll to <span class="path">Debugging</span>.</li>
+      <li>Tap <b>Select mock location app</b>.</li>
+      <li>Choose <b>GhostRoute</b> from the list.</li>
+    </ol>
+    <div class="note">This step is mandatory — Android only lets the app simulate
+    your GPS after you name it here. Nothing else grants it.</div>
+  </section>
+
+  <section>
+    <h2><span class="step">3</span> Using GhostRoute</h2>
+    <ol>
+      <li><b>Move the map</b> and tap the screen-center pin on your target —
+          then press the big action button to <b>Start</b>. Your device now
+          reports that spot.</li>
+      <li><b>Drop a pin anywhere</b> (long-press style select) — a manual pin
+          always beats IP sync.</li>
+      <li><b>Route Studio</b> — plot several waypoints, pick the speed, choose
+          Once / Loop / Ping-pong and press Go. The route plays back with a
+          preview and progress in the dashboard.</li>
+      <li><b>Joystick</b> — enable it in Settings, allow “Display over other
+          apps”, and nudge your position while running.</li>
+      <li><b>IP location</b> — check the public IP your device presents to the
+          internet (useful alongside a VPN), and optionally sync the simulated
+          GPS to it.</li>
+      <li><b>Stop</b> — press Stop in the app, the notification, or long-press
+          the app icon → Stop. Simulated GPS is restored to your real location
+          afterwards.</li>
+    </ol>
+    <p class="tip">Sessions, favorites, routes and settings all persist across
+    restarts. Backup lives in Settings if you switch phones.</p>
+  </section>
+
+  <section>
+    <h2><span class="step">?</span> Troubleshooting</h2>
+    <ol>
+      <li><b>“Mock location not active”</b> — re-check step 2; the picker must
+          say GhostRoute.</li>
+      <li><b>Location not changing in other apps</b> — those apps may need a
+          restart, or they cache until the next GPS update. Also set device
+          Location mode to “GPS only”/“Device only” for the cleanest spoof.</li>
+      <li><b>IP shows my real city</b> — your VPN may exclude GhostRoute from
+          its tunnel (split tunneling). Enable “route all apps” in your VPN,
+          then refresh the IP panel.</li>
+    </ol>
+  </section>
+
+  <!-- ============ فارسی ============ -->
+  <section id="fa" dir="rtl" lang="fa">
+    <h2><span class="step">۱</span> فعال‌سازی حالت توسعه‌دهنده</h2>
+    <ol>
+      <li>برنامه <b>تنظیمات</b> گوشی را باز کنید.</li>
+      <li>به <span class="path">درباره‌ی تلفن</span> بروید.</li>
+      <li>گزینهٔ <span class="path">شمارهٔ ساخت (Build number)</span> را پیدا کنید —
+          گاهی زیر <span class="path">اطلاعات نرم‌افزار</span> است.</li>
+      <li><b>۷ بار</b> روی «شمارهٔ ساخت» بزنید تا پیام «شما توسعه‌دهنده شدید» را ببینید.</li>
+      <li>به تنظیمات ← <span class="path">سیستم</span> ←
+          <span class="path">گزینه‌های توسعه‌دهنده</span> برگردید
+          (در برخی گوشی‌ها مستقیم داخل تنظیمات است).</li>
+    </ol>
+    <p class="tip">نام منوها در برندهای مختلف کمی متفاوت است؛ کلمهٔ کلیدی
+    «Build number» را جست‌وجو کنید.</p>
+  </section>
+
+  <section dir="rtl" lang="fa">
+    <h2><span class="step">۲</span> مجوز مکان جعلی</h2>
+    <ol>
+      <li><span class="path">گزینه‌های توسعه‌دهنده</span> را باز کنید.</li>
+      <li>در بخش <span class="path">دیباگ (Debugging)</span> روی
+          <b>Select mock location app</b> بزنید.</li>
+      <li><b>GhostRoute</b> را انتخاب کنید.</li>
+    </ol>
+    <div class="note">این مرحله اجباری است — اندروید فقط با همین انتخاب اجازهٔ
+    شبیه‌سازی GPS را می‌دهد.</div>
+  </section>
+
+  <section dir="rtl" lang="fa">
+    <h2><span class="step">۳</span> استفاده از GhostRoute</h2>
+    <ol>
+      <li><b>نقشه را حرکت دهید</b> و سنجاق وسط صفحه را روی مقصد بگذارید،
+          سپس دکمهٔ بزرگ <b>شروع</b> را بزنید — موقعیت دستگاه جعلی می‌شود.</li>
+      <li><b>سنجاق دستی</b> همیشه بر همگام‌سازی IP اولویت دارد.</li>
+      <li><b>استودیو مسیر</b> — چند نقطه بسازید، سرعت را تنظیم کنید و
+          حالت یک‌بار / حلقه / رفت‌وبرگشت را انتخاب کنید.</li>
+      <li><b>جوی‌استیک</b> — از تنظیمات فعال کنید، مجوز «نمایش روی برنامه‌های
+          دیگر» را بدهید و حین شبیه‌سازی مکان را جابه‌جا کنید.</li>
+      <li><b>مکان IP</b> — IP عمومی دستگاه و همراهی آن با VPN را ببینید؛ در
+          صورت تمایل GPS شبیه‌سازی‌شده را با آن همگام کنید.</li>
+      <li><b>توقف</b> — از برنامه، نوتیفیکیشن یا نگه‌داشتن آیکون برنامه ← توقف.
+          بعد از توقف، GPS واقعی برمی‌گردد.</li>
+    </ol>
+  </section>
+
+  <section dir="rtl" lang="fa">
+    <h2><span class="step">؟</span> رفع اشکال</h2>
+    <ol>
+      <li><b>«مکان جعلی فعال نیست»</b> — مرحلهٔ ۲ را دوباره چک کنید؛ انتخاب‌گر
+          باید روی GhostRoute باشد.</li>
+      <li><b>مکان در برنامه‌های دیگر تغییر نمی‌کند</b> — آن برنامه‌ها را ببندید
+          و دوباره باز کنید، و حالت موقعیت را روی «فقط GPS» بگذارید.</li>
+      <li><b>IP، شهر واقعی من را نشان می‌دهد</b> — احتمالاً VPN شما GhostRoute
+          را از تونل خارج کرده (split tunneling). حالت «همهٔ برنامه‌ها» را در
+          VPN فعال کنید و پنل IP را رفرش کنید.</li>
+    </ol>
+  </section>
+
+  <footer>
+    GhostRoute · by Amirreza<br>
+    <a href="https://github.com/amrsh88">github.com/amrsh88</a> ·
+    <a href="https://t.me/net_republic">t.me/net_republic</a> ·
+    <a href="https://t.me/netrepublic">t.me/netrepublic</a><br>
+    Net Republic — technology &amp; free/open-internet community
+  </footer>
+</div>
+</body>
+</html>
